@@ -14,6 +14,6 @@ jobs:
       - name: Sync repository
         uses: actions/checkout@v4
       - name: Sync fork
-        run: gh repo sync
+        run: gh repo sync -b master
         env:
           GITHUB_TOKEN: ${{ secrets.SYNC_TOKEN }}
