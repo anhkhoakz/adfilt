@@ -21,7 +21,7 @@ body:
     id: log-photo
     attributes:
       label: Add a screenshot of the extension's logger
-      description: If you're using uBlock Origin, it's recommended to filter the selection down to Blocked+Allowed+Modified, to reduce the amount of (mostly irrelevant) white-coloured log entries.
+      description: If you're using uBlock Origin, it's recommended to filter the selection down to Blocked+Allowed+Modified, to reduce the amount of (mostly irrelevant) white-coloured log entries.<br><br>If you're using AdGuard Browser Extension, it's recommended to open "≡ Open filtering log" → use Ctrl+click to select Allowed+Blocked+Modified.<br><br>AdGuard's software apps' logs are less detailed, due to their failure to list the exact applied hiding entries:<br>   • "Adguard for Windows"' logger has a rudimentary log is at Settings → Ad Blocker → Filtering Log → ||| → Allowed+Modified+Blocked.<br>   • "AdGuard for Android"'s logger has a rudimentary log at the pie icon on the bottom bar → Recent activity → ⋮ → Uncheck "Regular" → < <br><br>If you're using Adblock Plus, the log is at F12 (The keyboard key) → Adblock Plus (The tab to the right of "Security") → Reload the page once with "Show blocked" and take a screenshot → Reload the page again with "Show allowlisted" and take a screenshot.
       placeholder: Write the problem here.
     validations:
       required: false
@@ -39,19 +39,19 @@ body:
         - AdBlock (Firefox or Manifest V2)
         - AdGuard Home
         - Blokada
-        - I Don't Care About Cookies (The extension)
+        - I Don't Care About Cookies / I Stil Don't Care About Cookies (The extension)
         - AdNauseam
-        - pfBlockerNG
         - Brave's built-in adblocker (a.k.a. Brave Shield)
         - Firefox's built-in tracking protection
         - Vivaldi's built-in adblocker
         - Opera's built-in adblocker
         - MS Edge's built-in tracking protection
-        - DNS adblocking server(s)
+        - DNS adblocking server(s), incl. AdGuard Public DNS and Quad9
         - Pi-hole (Support may be limited)
         - dnsmasq (Support may be limited)
+        - pfBlockerNG (Support may be limited)
         - Adblocker Ultimate (Not recommended, as it's a ripoff of AdGuard's browser versions)
-        - (Other)
+        - <i>(Other)</i>
     validations:
       required: true
   - type: textarea
@@ -62,10 +62,10 @@ body:
     validations:
       required: false
   - type: textarea
-    id: which-filterlists-did-you-use
+    id: which-filterlists-did-you-use-screenshot
     attributes:
       label: Which filterlists did you use? Failing to tell this will temporarily close the report until it has been told.
-      placeholder: Paste an image or textlist here. This includes DNS adblocking servers.
+      placeholder: Paste an image, textlist, or (if nothing else is possible) uBO's "Troubleshooting Information" textbox here. This includes DNS adblocking servers.
     validations:
       required: true
   - type: dropdown
@@ -78,16 +78,17 @@ body:
         - Firefox (incl. LibreFox)
         - Vivaldi
         - Brave Browser
-        - Tor Browser (incl. Firefox ESR 115)
+        - Tor Browser (incl. Firefox ESR 115, Waterfox, and SeaMonkey)
         - Chromium for Linux (Manifest V2)
         - Microsoft Edge (Manifest V2)
         - Ungoogled Chromium (Manifest V2)
         - Midori Electron (not WebKit)
         - Opera (any variety)
         - Kiwi Browser
+        - Waterfox Classic
         - Internet Explorer 11 (Support may be limited)
         - It's about a phone app, TV app, or console
-        - (Other)
+        - <i>(Other)</i>
     validations:
       required: true
   - type: textarea
@@ -115,13 +116,13 @@ body:
         - OpenBSD (Support may be limited)
         - Smart-TV (Write the TV model below)
         - Game console (Write the console type below)
-        - (Other)
+        - <i>(Other)</i>
     validations:
       required: true
   - type: textarea
     id: oses-version
     attributes:
       label: OS version(s)
-      placeholder: Write the version number(s) and "Other" OSs here, for example "21H1", "10.14", "7.1.1", "Tizen OS", "ARM64", etc.
+      placeholder: Write the version number(s) and "Other" OSs here, for example "21H1", "10.14", "7.1.1", "Tizen OS", "ARM64", "Fedora 39", etc.
     validations:
       required: false

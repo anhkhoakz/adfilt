@@ -1,6 +1,6 @@
 ! Title: 🏔️ Dandelion Sprouts nordiske filtre for ryddigere nettsider
 ! Title 🇬🇧: Dandelion Sprout's Nordic filters for tidier websites
-! Version: 10February2024v2
+! Version: 15February2024v1
 ! Expires: 18 hours
 ! Lisens / Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md
@@ -244,6 +244,7 @@ nordlysid.fo###ease_adgroup_3
 nordlysid.fo##.adgroup--component[collapse=top]
 nordlysid.fo##.adgroup--component[collapse=vertical]
 nordlysid.fo##column[class*=ad-style]:not([collapse])
+startsiden.no##a[id^=desked-section-][rel=nofollow]
 noresk.com,eroguide.dk##.ipsSpacer_both
 norges.online###modaladv
 norges.online##+js(aopr, adclick)
@@ -425,6 +426,7 @@ udeoghjemme.dk##.bg-brown-200.py-30
 alt.dk##.section-banner
 ddig.dk##.td-main-sidebar
 bygge-anlaegsavisen.dk##.main--add
+kommunal-rapport.no##.dre-item--skin-reklame
 ! — — — — — — — — —
 ! 🇳🇴: Oppføringer for minst 3 nettsteder
 ! 🇬🇧: Entries for at least 3 websites
@@ -704,7 +706,8 @@ _visittkortannonse_$image
 ! https://bygge-anlaegsavisen.dk/historisk-vejprojekt-mellem-sisimiut-og-kangerlussuaq-undervejs (30/12/2023)
 ||s3.eu-west-1.amazonaws.com/ads.$subdocument
 ! https://www.minmote.no/interioer/gjoer-det-selv/a/EQBava/slik-faar-du-den-perfekte-uteplassen-til-vaarsesongen
-||shopi.tize.no^$subdocument,3p
+! https://github.com/DandelionSprout/adfilt/discussions/932#discussioncomment-8408727
+||tize.no^$subdocument,3p
 ! — — — — — — —
 ! 🇳🇴: Blokkeringsoppføringer for filtjenere eller enkeltnettsteder
 ! 🇬🇧: Fileserver or site-specific blocking rules
@@ -1204,6 +1207,7 @@ fiskeribladet.no##div[id^=banner_billboard1_]
 fiskeribladet.no##div[id^=banner_billboard1_] + .hide_on_print
 fl-arena.de##.content_right_medium_rect_ad_box
 fl-arena.de##.do_not_print.article_teaser_no_border
+vp.fo###top
 fla.de##.adsenseblock
 fla.de##.font-robotoregular.font10
 fla.de##div[data-glade]
@@ -1751,6 +1755,7 @@ nhi.no##div.MuiContainer-root div[class^=mui-style-]:has(div[data-ad-unit-id])
 elbil24.no##.carousel-container + div:not(.carousel-container):has([class*=ad])
 digi.no##.col-span-12:not([class*=" "]):has(> :is([class$=" "],[class*=_class],:not([class*=" "])))
 digi.no##.hidden[class*=" lg:flex"]
+vg.no##.advert
 ! — — — — —
 ! 🇳🇴: Oppføringer med spesielle omstendigheter
 ! 🇬🇧: Entries with special circumstances

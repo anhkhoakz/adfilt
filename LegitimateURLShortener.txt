@@ -1,5 +1,5 @@
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 09February2024v1
+! Version: 17February2024v4
 ! Expires: 12 hours
 ! Description: In a world dominated by bitLy, adfLy, and several thousand other malware cover-up tools, this list reduces the length of URLs in a much more legitimate and transparent manner. Essentially, it automatically removes unnecessary $/& values from the URLs, making them easier to copy from the URL bar and pasting elsewhere as links. Enjoy.
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
@@ -11,9 +11,9 @@
 ! - this list can not bypass tracker redirects through third-party domains. This can be done by strict-blocking said domain and using the ability to view parameters on the strict-block page or tools to bypass it.
 ! - this list can not remove anything after the # in URLs. This is impossible in uBlock Origin and AdGuard.
 ! - this list can not remove parameters added using https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState
-! - as of 10/3/2023, this list is not supported in Brave, due to Brave missing several critical features this list uses. Please use this list only with uBlock Origin or AdGuard.
+! - as of 10/03/2023, this list is not supported in Brave, due to Brave missing several critical features this list uses. Please use this list only with uBlock Origin or AdGuard.
 
-! ——— General remove rules ——— !
+! 🗺️ ——— General remove rules ——— 🗺️ !
 ! From AdGuard CoreLibs (11/11/2020)
 $removeparam=yclid
 $removeparam=gclid
@@ -36,10 +36,10 @@ $removeparam=mindbox-message-key
 $removeparam=nx_source
 $removeparam=oprtrack
 $removeparam=ysclid
-&uclick=*&uclickhash=$removeparam
-/?r=dir&zoneid=$removeparam
-/?rb=*&zoneid=$removeparam
-/?uclick=*;uclickhash=$removeparam
+&uclick=*&uclickhash=$doc,removeparam
+/?r=dir&zoneid=$doc,removeparam
+/?rb=*&zoneid=$doc,removeparam
+/?uclick=*;uclickhash=$doc,removeparam
 
 ! https://www.elkjop.no/product/data/kabler-og-tilkobling-pc-og-nettverk/APPLEMD463ZA/thunderbolt-til-gigabit-ethernet-adapter?utm_id=Pricecomparison2989_5_False&utm_medium=Pricecomparison (14/11/2020)
 ! https://www.ikea.com/kr/en/stores/restaurant/?itm_campaign=ikea_food&itm_element=essential_banner&itm_content=ikea_food (17/02/2021)
@@ -48,7 +48,7 @@ $removeparam=ysclid
 ! https://www.dx.com/p/sliding-camera-protective-cover-for-smartphones-laptops-tablets-2729311.html?Utm_rid=91262049&Utm_source=affiliatewindow (21/11/2021)
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-488307
 ! Exclude sendgb.com - https://github.com/AdguardTeam/AdguardFilters/issues/100285
-$removeparam=/^\??utm_/i,domain=~tradedoubler.com|~sendgb.com|~allegro.pl|~tix.axs.com|~transfernow.*|~carrefourpl.snrpage.com|~justdial.com|~pepper.pl
+$doc,removeparam=/^\??utm_/i,domain=~tradedoubler.com|~sendgb.com|~allegro.pl|~tix.axs.com|~transfernow.*|~carrefourpl.snrpage.com|~justdial.com|~pepper.pl
 $doc,removeparam=/^itm_/,domain=~redir.tradedoubler.com
 $doc,removeparam=/^stm_/,domain=~redir.tradedoubler.com
 
@@ -427,7 +427,7 @@ $removeparam=refer_code
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113875
 $removeparam=AFID,domain=~chggtrx.com|~state.gov
 ! (https://github.com/uBlockOrigin/uAssets/issues/14997)
-$~css,~script,removeparam=campaignid
+$doc,removeparam=campaignid
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-810773
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1412160
@@ -515,7 +515,8 @@ $removeparam=affname
 $removeparam=MID,domain=~media-cdn.costco.*|~community.arubanetworks.com
 
 ! https://www.greatrun.org/train-and-prepare/training-plans/?eid=AJ935930567982484926441023zzzzz64bccfd443fc61ff2c06e3cf8c7b889a2061064e5d5db55e171241354f241bed00
-$removeparam=eid,doc,denyallow=embed.tapkal.fi|myanimelist.net,domain=~activationspot.com|~anidb.net|~howlongtobeat.com|~piwigo.org|~vmware.com|~eventbrite.*|~egift.blackhawknetwork.com|~redeem.giftcards.com|~scopus.com|~stockmann.com|~jugem.jp|~kake.fi|~calendar.google.*|~getqpay.com|~qpayhub.com
+! should not be made global, i.e. https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-8462696
+$removeparam=eid,doc,denyallow=embed.tapkal.fi|myanimelist.net,domain=greatrun.org|mcafee.com
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1031533
 $removeparam=nr_email_referer
@@ -896,7 +897,7 @@ $removeparam=_vsrefdom
 ! https://github.com/ClearURLs/Addon/issues/108
 $removeparam=ceneo_spo
 $doc,removeparam=/^from=ceneo$/
-$removeparam=/^ref=ceneo$/
+$doc,removeparam=/^ref=ceneo$/
 
 ! https://www.drip.com/learn/docs/manual/email-builder/suppress-__s-from-rendered-links
 $removeparam=__s,doc
@@ -905,11 +906,11 @@ $removeparam=__s,doc
 $removeparam=_kx
 
 ! https://strackr.com/subid
-$removeparam=/^affsrc=/i
-$removeparam=/^aff_sub\d?=/
+$doc,removeparam=/^affsrc=/i
+$doc,removeparam=/^aff_sub\d?=/
 $removeparam=afftrack
 $removeparam=atid
-$removeparam=/^clickref\d?=/
+$doc,removeparam=/^clickref\d?=/
 $removeparam=cuid
 $removeparam=data1,domain=~web3.cmvm.pt
 $removeparam=data2
@@ -923,11 +924,11 @@ $removeparam=sub2,domain=~go.dgdp.net
 $removeparam=sub3
 $removeparam=sub4
 $removeparam=sub5
-$removeparam=/^subid1=/i
-$removeparam=/^subid2=/i
-$removeparam=/^subid3=/i
-$removeparam=/^subid4=/i
-$removeparam=/^subid5=/i
+$doc,removeparam=/^subid1=/i
+$doc,removeparam=/^subid2=/i
+$doc,removeparam=/^subid3=/i
+$doc,removeparam=/^subid4=/i
+$doc,removeparam=/^subid5=/i
 $removeparam=tid1
 $removeparam=tid2
 $removeparam=tid3
@@ -950,7 +951,7 @@ $removeparam=__cn_tracker
 
 ! https://www.lidl.cz/?mktc=crm&sfmc_id=185629557
 ! https://help.salesforce.com/s/articleView?id=sf.mc_gai_utm_parameters.htm&type=5
-$removeparam=/^sfmc_/
+$doc,removeparam=/^sfmc_/
 $removeparam=mktc
 
 ! https://www.brettonwoods.com/?cm_ven=exacttarget&cm_cat=mtwasb-fell-into-october-18&cm_pla=vpl+9806+for+list+360&cm_ite=learn+more+and+register+for+races+today&sfmc_sub=70015724&cm_ainfo=
@@ -963,7 +964,7 @@ $removeparam=cm_lm
 $removeparam=cm_ainfo
 
 ! https://www.bodum.com/us/en/?Offers.com+%28Offers.com%2C+LLC%29=Offers.com+%28Offers.com%2C+LLC%29
-$removeparam=/^Offers\.com/
+$doc,removeparam=/^Offers\.com/
 
 ! https://www.hunterboots.com/us/en_us/sale-womens-sale-footwear#esp_sort=price&esp_order=asc?CSID=AFF||||&siteID=qpF0HYnRugA-S5yfZifcN54MdPsE4Cewzw
 $removeparam=CSID
@@ -972,42 +973,42 @@ $removeparam=CSID
 $removeparam=kpartnerid
 
 ! https://www.lifeextension.com/lab-testing/itemlc167015/apolipoprotein-b-blood-test?source=connexity&cnxclid=16357131459502835009610090302008005
-$removeparam=/^source=connexity$/
+$doc,removeparam=/^source=connexity$/
 $removeparam=cnxclid
 
 ! https://www.laptopsdirect.co.uk/dji-pocket-2-phone-clip-cp.os.00000128.01/version.asp?refsource=webgains
-$removeparam=/^refsource=webgains$/
+$doc,removeparam=/^refsource=webgains$/
 
 ! https://www.picstop.co.uk/all-celestron-telescopes/celestron-astromaster-70az-refractor-with-phone-adapter-moon-filter.html?source=webgains&siteid=57172
-$removeparam=/^source=webgains$/
+$doc,removeparam=/^source=webgains$/
 
 ! https://www.kids-world.dk/fila-skuldertaske-phone-pods-wallet-sort-p-228122.html?source=tradedoubler
-$removeparam=/^source=tradedoubler$/
+$doc,removeparam=/^source=tradedoubler$/
 
 ! https://www.online4baby.com/hauck-sit-n-relax-3-in-1-highchair-stretch-grey?siteid=57172&network=Webgains
-$removeparam=/^network=webgains$/i
+$doc,removeparam=/^network=webgains$/i
 
 ! https://www.ssense.com/en-gb/women/product/balenciaga/blue-shopping-phone-holder-bag/6754521?clickref=1100liwW6M5R&ref=kelkoogb
 ! https://www.peterhahn.dk/peter-hahn-buks-i-100-bomuld-sort-265728.html?campaign=Preissuchmaschinen/kelkoo (DK)/265728/265728360&ref=kelkoodk
-$removeparam=/^ref=kelkoo/
+$doc,removeparam=/^ref=kelkoo/
 
 ! https://www.myprotein.es/sports-accessories/brazalete-smartphone-gym-essentials-negro/12591033.html?kk=a4c6368-17cd7f25ed7-10120a&affil=thgppc&from=kelkooes
 ! https://www.overly.it/tv-led/21225-nikkei-ni24hd6c-tvc-24-hd-sat-8022625024065.html?kk=a4c6361-17d0fd13439-d1022&from=kelkoo
-$removeparam=/^kk=\w{6,}-\w{10,}-\w{5,}$/
-$removeparam=/^from=kelkoo/
+$doc,removeparam=/^kk=\w{6,}-\w{10,}-\w{5,}$/
+$doc,removeparam=/^from=kelkoo/
 
 ! https://www.shopping4net.dk/Legetoej/Leg-Laer/Paedagogisk-legetoej/Paw-Patrol-Smart-Phone-DK-SE-NO.htm?sClickID=Kelkoo-8-2
 $removeparam=sClickID
 
 ! https://www.cykelpartner.dk/mobilholder-telefonholder-mm/lifeventure-waterproof-phone-pouch---vandtaet-pose-til-mobil---blaa?source=partnerads&paid=22947&pa-partnerid=22947&pacid=617fcb66eb3c23.08348327
-$removeparam=/^source=partnerads$/
+$doc,removeparam=/^source=partnerads$/
 $removeparam=paid
 $removeparam=pacid
 $removeparam=pa-partnerid
 
 ! https://prispresseren.dk/shop/mobiltilbehoer/mobilholder/samdi-universal-wood-phone-holder-kaffefarve/?amp;utm_campaign=Google%20Feed&amp;utm_medium=cpc&amp;utm_term=29379
 ! ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-972519
-||prispresseren.dk^$removeparam=/^amp;/
+||prispresseren.dk^$doc,removeparam=/^amp;/
 
 ! https://www.fashiondays.ro/p/pantofi-sport-cu-aspect-colorblock-cell-omega-manga-cult-femei-puma-p2750164-1/?2p_affiliate_id=15adef88&2p_click_token=e64efe01d03493852f8fc609
 $removeparam=2p_affiliate_id
@@ -1046,7 +1047,7 @@ $removeparam=szredirectid
 $removeparam=porc
 
 ! https://www.beautycarechoices.com/?src=aff
-$removeparam=/^src=aff$/
+$doc,removeparam=/^src=aff$/
 
 ! https://support.appsflyer.com/hc/en-us/articles/207447163
 ! https://www.farfetch.com/uk/shopping/kids/boss-kidswear-logo-print-pacifier-item-14954919.aspx?clickref=1100liwZjcmH&c=kelkoo_uk&af_siteid=1100l62250&af_sub_siteid=1011l271&af_cost_model=CPA&af_channel=affiliate&is_retargeting=true
@@ -1069,14 +1070,14 @@ $removeparam=af_referrer_customer_id
 $removeparam=af_referrer_name
 $removeparam=af_referrer_uid
 $removeparam=af_siteid
-$removeparam=/^af_sub\d=/
+$doc,removeparam=/^af_sub\d=/
 $removeparam=af_sub_siteid
 $removeparam=is_retargeting
 $doc,removeparam=shortlink
 
 ! https://support.appsflyer.com/hc/en-us/articles/207447163#partner-id-pid-parameter
 ! https://playwsop.com/play?pid=googleadwords_int&af_prt=yellowhead&lv=1&clickid=CjwKCAiAxKv_BRBdEiwAyd40N7UPnJYsvWlbP736d2pr8dX0KrtpLAlg3LTef2AVqIju98ciYBEmwxoCYuUQAvD_BwE&c=US_Brand-exact&af_c_id=631735899&af_adset_id=41062900269&af_ad_id=477184005272&af_siteid=&af_ad_type=Search&af_sub1=kwd-297535807811&af_sub2=playwsop&af_sub3=e&af_sub4=9029028&af_sub5=&af_keywords=playwsop
-$removeparam=/^pid=.*_int$/
+$doc,removeparam=/^pid=.*_int$/
 
 ! https://www.chelseafc.com/en/news/2021/09/02/tuchel-shortlisted-for-august-s-manager-of-the-month-award?deep_link_sub1=cfcapp://page/content/chelseafc/en/news/2021/09/02/tuchel-shortlisted-for-august-s-manager-of-the-month-award&shortlink=563e154b
 ! https://abra.onelink.me/paN3/referral?deep_link_sub1=RCVGBRB8X
@@ -1095,7 +1096,7 @@ $removeparam=detail_from
 
 ! https://s.lazada.sg/s.ZIugg
 $removeparam=sub_aff_id
-$removeparam=/^sub_id\d=/
+$doc,removeparam=/^sub_id\d=/
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1559915
 $removeparam=tg_ref
@@ -1178,10 +1179,10 @@ $removeparam=ad_config_id
 
 ! https://github.com/DandelionSprout/adfilt/pull/413
 $removeparam=dfw_tracker
-$removeparam=/^src=rss$/
+$doc,removeparam=/^src=rss$/
 
 ! https://www.geico.com/living/driving/page/2/?otm_click_id=7cc576a6-ae8c-4002-83f0-8c0ce75178c8&otm_content=article-pages%3Aarticle-page-right-rail-recent-posts&otm_medium=onespot&otm_source=onsite
-$removeparam=/^otm_/
+$doc,removeparam=/^otm_/
 
 ! https://developers.amplitude.com/docs/advanced-settings#cross-domain-tracking-javascript
 $removeparam=amp_device_id
@@ -1198,7 +1199,7 @@ $removeparam=removedParams
 ! (Example links removed to try to handle antivirus false positives)
 $removeparam=iclid
 $removeparam=rndad
-$removeparam=/^tracker=affiliatefuture$/i
+$doc,removeparam=/^tracker=affiliatefuture$/i
 $removeparam=affc
 $removeparam=a_fid
 $removeparam=afCampaignId
@@ -1228,9 +1229,9 @@ $removeparam=dm_i
 $removeparam=epik
 
 ! https://matomo.org/docs/tracking-campaigns/
-$removeparam=/^mtm_/
-$removeparam=/^matomo_/
-$removeparam=/^piwik_/
+$doc,removeparam=/^mtm_/
+$doc,removeparam=/^matomo_/
+$doc,removeparam=/^piwik_/
 $removeparam=pk_campaign
 $removeparam=pk_medium
 $removeparam=pk_source
@@ -1260,16 +1261,16 @@ $removeparam=ads_targetid
 $removeparam=elqTrack
 
 ! https://gitlab.com/anti-tracking/ClearURLs/rules/-/issues/208
-$removeparam=/^from=rss$/
+$doc,removeparam=/^from=rss$/
 
 ! https://gitlab.com/anti-tracking/ClearURLs/rules/-/issues/209
-$removeparam=/^source=rss$/
+$doc,removeparam=/^source=rss$/
 
 ! https://www.smh.com.au/world/europe/i-really-want-to-be-free-dubai-ruler-s-ex-wife-awarded-1b-to-settle-uk-custody-case-20211221-p59jf7.html?ref=rss
-$removeparam=/^ref=rss$/
+$doc,removeparam=/^ref=rss$/
 
 ! https://slate.com/culture/2022/01/the-beach-boys-brian-wilson-documentary-genius-pet-sounds.html?via=rss
-$removeparam=/^via=rss$/
+$doc,removeparam=/^via=rss$/
 
 ! https://gitlab.com/KevinRoebert/ClearUrls/-/issues/1095
 $removeparam=mindbox-click-id
@@ -1293,16 +1294,16 @@ $removeparam=affiliateCode
 $removeparam=affcode
 
 ! https://www.ericdress.com/?ref=admitad&tagtag_uid=a2338650fc306f56899654dc88324895
-$removeparam=/^ref=admitad$/
+$doc,removeparam=/^ref=admitad$/
 
 ! https://www.sunsky-online.com/v/1645470?source=admitad&tagtag_uid=53cd7d068fc6c1e124bf697e785d3d6f
-$removeparam=/^source=admitad$/
+$doc,removeparam=/^source=admitad$/
 
 ! https://horace.co/en/?target=admitad&tagtag_uid=b3c1717ba8405d217dcc71ac3957989a
-$removeparam=/^target=admitad$/
+$doc,removeparam=/^target=admitad$/
 
 ! https://www.inredningsvaruhuset.se/ios/63223-apple-iphone-13-128gb-midnight-0194252707203.html?referer=prisjakt
-$removeparam=/^referer=prisjakt/i
+$doc,removeparam=/^referer=prisjakt/i
 
 ! https://digicom.nu/sv/produkter/xiaomi-box-s-4k-hdr.html?ref_lp=prisjakt
 $removeparam=ref_lp
@@ -1360,13 +1361,13 @@ $removeparam=vgo_ee
 $removeparam=rpcid
 
 ! https://www.spelbutiken.se/produkt/oculus-quest-2-128gb/238WU6/?ref=prisjakt
-$removeparam=/^ref=prisjakt/i
+$doc,removeparam=/^ref=prisjakt/i
 
 ! https://www.onbuy.com/gb/sony-wh-1000xm4-wireless-noise-canceling-over-ear-headphones-blue~c3241~p48721262/?ref=pricespy
-$removeparam=/^ref=pricespy/i
+$doc,removeparam=/^ref=pricespy/i
 
 ! https://www.printerinks.com/16936/2p-n-014/inkjet-cartridges/canon/canon-pg-540xl_cl-541xl-original-high-capacity-ink-cartridge-multipack/?pgid=8449ff20-72de-4233-b817-37a1f4bcda5f&amp;utm_medium=awin&amp;utm_source=cse
-$removeparam=/^amp;utm_/
+$doc,removeparam=/^amp;utm_/
 
 ! https://www.gigantti.fi/product/tietokoneet-ja-toimistotarvikkeet/naytot-ja-tarvikkeet/naytot/msi-optix-g271-27-pelinaytto/357445?sap-outbound-id=FDF2695F7CA22FD871A6CCE768E64005CDAE4D30
 $removeparam=sap-outbound-id
@@ -1393,7 +1394,7 @@ $removeparam=oft_sk
 $removeparam=adobe_mc
 
 ! https://segmentify.github.io/segmentify-dev-doc/integration_web/
-$removeparam=/^_sgm_/i
+$doc,removeparam=/^_sgm_/i
 
 ! https://gitlab.com/ClearURLs/rules/-/issues/254
 $removeparam=omnisendContactID
@@ -1444,7 +1445,7 @@ $removeparam=as_channel
 $removeparam=as_source
 
 ! https://www.telia.fi/kauppa/tuote/jbl-tune-710bt/jblt710btblk?source=igodigital
-$removeparam=/^source=igodigital$/
+$doc,removeparam=/^source=igodigital$/
 
 ! https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD?qq-pf-to=pcqq.c2c (29/12/2022)
 ! https://github.com/DandelionSprout/adfilt/pull/722
@@ -1458,8 +1459,8 @@ $removeparam=li_source
 $removeparam=li_medium
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-5301390 (15/03/2023)
-$removeparam=/^adpopup=[a-eg-zA-EG-Z0-9]/
-$removeparam=/^adppopup=[a-eg-zA-EG-Z0-9]/
+$doc,removeparam=/^adpopup=[a-eg-zA-EG-Z0-9]/
+$doc,removeparam=/^adppopup=[a-eg-zA-EG-Z0-9]/
 
 ! https://css-tricks.com/trigonometry-in-css-and-javascript-beyond-triangles/?relatedposts_hit=1&relatedposts_origin=377074&relatedposts_position=1
 $removeparam=relatedposts_hit
@@ -1468,8 +1469,8 @@ $removeparam=relatedposts_position
 
 ! https://itsfoss.com/linux-gaming-guide/?ref=news.itsfoss.com
 ! https://www.raspberrypi.org/documentation/usage/kodi/?ref=itsfoss.com
-$removeparam=/^ref=itsfoss.com$/
-$removeparam=/^ref=news.itsfoss.com$/
+$doc,removeparam=/^ref=itsfoss.com$/
+$doc,removeparam=/^ref=news.itsfoss.com$/
 
 ! https://borsen.dk/nyheder/udland/smaa-skridt-mod-svensk-medlemskab-af-nato?b_source=borsen&b_medium=row_3&b_campaign=news_2
 $removeparam=b_source
@@ -1698,16 +1699,20 @@ $removeparam=tgclid
 ! https://open.spotify.com/playlist/34iUh5RAUSkeJtJCvGZrlT?dlsi=ac1f2f8c4b984bd3 (03/12/2023)
 $removeparam=dlsi
 
+! https://www.stormberg.com/no?tmt_data=4226bb90-876e-4394-a4be-d1a698caa63f&tmt_ufp=8709e6c2e45c009a1fbb6d33299025d43342a35660b92f8ab775803240442d69
+$removeparam=tmt_data
+$removeparam=tmt_ufp
+
 ! ——— General blocking rules ——— !
 !! Scripts that solely exist to make URLs longer.
 ! https://github.com/DandelionSprout/adfilt/pull/320
 ! https://github.com/the1812/Bilibili-Evolved/issues/2247
 /auto-append-spmid.js
 
-! ——— Specific remove rules ——— !
+! 🐹 ——— Specific remove rules 🐹 ——— !
 !! ——— Can never be made generic ———
 ! (e.g. due to sparebank1.no, RARbg.to, Disney+ newsletter unsubscriptions)
-$doc,removeparam=cid,domain=8days.sg|abcnews.go.com|adguard.com|adshares.net|ae.com|anntaylor.com|apple.com|bitdefender.*|blair.com|channelnewsasia.com|childrensplace.com|dcard.tw|elmundo.es|emirates.com|factoryoutletstore.com|fifa.com|flipkart.com|gamestop.com|giphy.com|glasses.com|haband.com|intuit.com|jared.com|jcpenney.com|kay.com|kohls.com|lenovo.com|loft.com|marca.com|microsoft.com|nbcnews.com|nike.com|nyandcompany.com|overstock.com|persol.com|proshop.*|radissonhotelsamericas.com|ray-ban.com|rei.com|rightmove.co.uk|samsung.com|stadium.*|staples.com|telenor.no|todayonline.com|tokopedia.com|tommy.com|toms.com|totalbeauty.com|tractorsupply.com|underarmour.com|vineyardvines.com|voxi.co.uk|wine.com|wsj.com|xg4ken.com|zales.com
+$doc,removeparam=cid,domain=8days.sg|abcnews.go.com|adguard.com|adshares.net|ae.com|anntaylor.com|apple.com|bitdefender.*|blair.com|channelnewsasia.com|childrensplace.com|controld.com|dcard.tw|elmundo.es|emirates.com|factoryoutletstore.com|fifa.com|flipkart.com|gamestop.com|giphy.com|glasses.com|haband.com|intuit.com|jared.com|jcpenney.com|kay.com|kohls.com|lenovo.com|loft.com|marca.com|microsoft.com|nbcnews.com|nike.com|nyandcompany.com|overstock.com|persol.com|proshop.*|radissonhotelsamericas.com|ray-ban.com|rei.com|rightmove.co.uk|samsung.com|stadium.*|staples.com|telenor.no|todayonline.com|tokopedia.com|tommy.com|toms.com|totalbeauty.com|tractorsupply.com|underarmour.com|vineyardvines.com|voxi.co.uk|wine.com|wsj.com|xg4ken.com|zales.com
 ! https://deal.no/apple-thunderbolt-to-gigabit-ethernet/cat-p/c/p4935744&ref=prisjakt (15/11/2020)
 ! https://www.amazon.com/s?k=disney+fairies&ref=nb_sb_noss_2 (27/11/2020)
 ! (https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-488495)
@@ -2177,7 +2182,7 @@ $removeparam=referral,domain=tv2.no|spotify.com|yubo.live
 !! ——— Rules for heavily covered international sites ———
 !!! ——— PR-China ———
 !!! Special thanks to https://github.com/DeepChirp for helping with this section.
-!!!! ——— Alibaba ———
+!!!! ——— Alibaba + AliExpress ———
 ! https://es.aliexpress.com/item/4000672272353.html?pvid=c4cdc770-f05a-4b7b-8a50-d8b81efff6c9&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:c4cdc770-f05a-4b7b-8a50-d8b81efff6c9,tpp_buckets:668%230%23131923%230_668%23808%234094%23200_668%23888%233325%231_668%232846%238113%23646_668%232717%237558%23188_668%231000022185%231000066059%230_668%233468%2315617%23897
 ||aliexpress.*/item/$removeparam=pvid
 ||aliexpress.$removeparam=_t
@@ -2226,6 +2231,8 @@ $removeparam=aff_click_id
 ||aliexpress.$removeparam=pdp_npi
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-3943463
 ||aliexpress.$removeparam=curPageLogUid
+! https://www.alibaba.com/toprankedsellers/index.html?spm=a2700.8293689.0.0.2ce267afXoR8Ya&cardId=15000000051127726082&topOfferIds=62108344908&categoryIds=44&tracelog=from_home_category (01/03/2021)
+||alibaba.com^$removeparam=categoryIds
 
 !!!! ——— Baidu ———
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1425521
@@ -2528,12 +2535,12 @@ $removeparam=report_recomm_player
 ! https://user.qzone.qq.com/1250252459/infocenter?via=toolbar (10/02/2022)
 ^via=toolbar^$removeparam=via,domain=user.qzone.qq.com
 
-!! ——— Miscellaneous ———
+!! 🏘️ ——— Miscellaneous specific entries ——— 🏘️ !
 ! No particular examples
 $removeparam=app,domain=tiktok.com|music.apple.*
 ! (Do not add to the below entry: play.google.com; see https://github.com/DandelionSprout/adfilt/issues/475)
 $removeparam=c,doc,domain=announcements.bybit.com|appsflyer.com|farfetch.com|glami.cz|hepsiburada.com|norton.com|onelink.me|shopee.*|tiktok.com
-$removeparam=campaign,domain=1sol.io|bdsmx.tube|blue-tomato.com|bybit.com|coinpanel.com|discord.*|docs.google.com|docsend.com|eventbrite.*|forms.gle|gleam.io|goodcrypto.app|instagram.com|kasta.io|mrgay.tube|outnorth.fi|peterhahn.*|runnode.com|scmp.com|shopee.*|sitepoint.com|sportler.com|t.me|twitter.com|x.com|youtube.com|reddit.app.link
+$doc,removeparam=campaign,domain=1sol.io|bdsmx.tube|blue-tomato.com|bybit.com|coinpanel.com|discord.*|docs.google.com|docsend.com|eventbrite.*|forms.gle|gleam.io|goodcrypto.app|instagram.com|kasta.io|mrgay.tube|outnorth.fi|peterhahn.*|reddit.app.link|runnode.com|scmp.com|shopee.*|sitepoint.com|sportler.com|t.me|twitter.com|ubereats.com|x.com|youtube.com
 $removeparam=/^pf_rd_/,domain=shopbop.com|amazon.*|imdb.com|zappos.com|audible.*|6pm.com
 $removeparam=Source,domain=facebook.*|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion|messenger.com|evga.com
 $removeparam=version,domain=mp.weixin.qq.com|us.norton.com
@@ -2635,9 +2642,6 @@ $removeparam=hpt,domain=cnn.com
 ||postnord.$removeparam=mobile
 ||postnord.$removeparam=signed
 
-! https://www.alibaba.com/toprankedsellers/index.html?spm=a2700.8293689.0.0.2ce267afXoR8Ya&cardId=15000000051127726082&topOfferIds=62108344908&categoryIds=44&tracelog=from_home_category (01/03/2021)
-||alibaba.com^$removeparam=categoryIds
-
 ! https://rugby.no/finn-din-lokale-klubb/ (05/03/2021)
 ||maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate^$removeparam
 ||maps.googleapis.com/maps/api/js/QuotaService.RecordEvent^$removeparam
@@ -2683,7 +2687,7 @@ $removeparam=pgtype,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj
 $removeparam=section,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion|nextdoor.com|store.thesims3.com
 
 ! https://www.imdb.com/title/tt7826036/?ref_=ttep_ep5
-$~xmlhttprequest,removeparam=ref_,domain=amazon.*|awesomeopensource.com|boxofficemojo.com|facebook.*|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion|imdb.com|primevideo.com|shopbop.com
+$doc,removeparam=ref_,domain=amazon.*|awesomeopensource.com|boxofficemojo.com|facebook.*|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion|imdb.com|primevideo.com|shopbop.com
 
 ! https://www.argos.co.uk/product/2727075?tag=ar:events:furniture-sale:carousel:2727075
 $removeparam=tag,domain=argos.co.uk|habitat.co.uk|tv2.no|support.github.com
@@ -4327,10 +4331,10 @@ $removeparam=dyn,domain=clink2.com|dlink2.com,doc
 ||adguard.info^$removeparam=nc
 
 ! https://malwaretips.com/blogs/fanjestic-com-a-dubious-free-trial-offer-explained/?ref=404media.co
-*ref=404media.co*$doc,removeparam=/^ref=404media.co$/
+ref=404media.co$doc,removeparam=/^ref=404media.co$/
 
 ! https://generated.photos/human-generator/?ref=easywithai
-*ref=easywithai*$doc,removeparam=/^ref=easywithai$/
+ref=easywithai$doc,removeparam=/^ref=easywithai$/
 
 ! masterkia: https://slack.com/downloads/linux?t=[Slack channel ID]
 ||slack.com/downloads/$doc,removeparam=t
@@ -4409,7 +4413,7 @@ $doc,removeparam=wt_mc
 $doc,removeparam=wt_zmc
 
 ! https://www.wired.com/story/the-best-chrome-extensions-to-prevent-creepy-web-tracking/?ref=exploit.media
-*ref=exploit.media*$doc,removeparam=/^ref=exploit.media$/
+ref=exploit.media$doc,removeparam=/^ref=exploit.media$/
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-7469206
 $doc,removeparam=bpli,domain=blogger.com
@@ -4418,7 +4422,7 @@ $doc,removeparam=bpli,domain=blogger.com
 $doc,removeparam=st,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
 
 ! https://vimeo.com/17401157?ref=beep.blog
-*ref=beep.blog*$doc,removeparam=/^ref=beep.blog$/
+ref=beep.blog$doc,removeparam=/^ref=beep.blog$/
 
 ! https://en.tempo.co/read/1190449/prabowo-not-against-globalization-gerindra?tracking_page_direct
 ||tempo.co^$doc,removeparam=tracking_page_direct
@@ -4443,13 +4447,13 @@ $doc,removeparam=st,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyi
 ||cimri.com^$doc,removeparam=hasFavorite
 
 ! https://github.com/AsuharietYgvar/AppleNeuralHash2ONNX/issues/1?ref=blog.roboflow.com
-*ref=blog.roboflow.com*$doc,removeparam=/^ref=blog.roboflow.com$/
+ref=blog.roboflow.com$doc,removeparam=/^ref=blog.roboflow.com$/
 
 ! https://gitlab.com/search?nav_source=navbar&search=blocklist
 ||gitlab.com^$doc,removeparam=nav_source
 
 ! https://futureparty.com/spotlight/?ref=buffer.com
-*ref=buffer.com*$doc,removeparam=/^ref=buffer.com$/
+ref=buffer.com$doc,removeparam=/^ref=buffer.com$/
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-7715888
 ||bybit.com^$doc,removeparam=/^sa_utm_/i
@@ -4573,10 +4577,27 @@ $removeparam=cgkit_search_word
 ||shop.samsung.com^$doc,removeparam=hmz_lid
 
 ! https://labs.watchtowr.com/are-we-now-part-of-ivanti/
-*ref=labs.watchtowr.com*$doc,removeparam=/^ref=labs.watchtowr.com$/
+ref=labs.watchtowr.com$doc,removeparam=/^ref=labs.watchtowr.com$/
+
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-8455734
+ref=upstract.com$doc,removeparam=/^ref=upstract.com$/
+
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-8463132
+||koreaherald.com^$doc,removeparam=ACE_SEARCH
+
+! https://www.abcnyheter.no/?nr=1
+!+NOT_OPTIMIZED
+||abcnyheter.no^$removeparam=nr
+
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-8480036
+||windscribe.com^$doc,removeparam=pcpid
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/172844
+||ubereats.com^$doc,removeparam=marketing-visitor-id
+||ubereats.com^$doc,removeparam=sub-campaign
 
 !#if !env_mobile
-! ——— Entries mostly dedicated to maximising image sizes (thus poorly suited for phones) ———
+! 🖥️ ——— Entries mostly dedicated to maximising image sizes (thus poorly suited for phones) ——— 🖥️ !
 ! https://sproutsluckycorner.files.wordpress.com/2019/12/ring-fit-adventure-smoothies-1.png?w=600 (Shows the actual raw image instead of a promotion page; 25/11/2020)
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
@@ -4587,7 +4608,7 @@ $removeparam=height,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno
 ||ikea.com/*/images/products^$removeparam=f
 !#endif
 
-! + ——— + Scriptlets + ——— + !
+! 🤖 + ——— + Scriptlets + ——— + 🤖 !
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1352038
 actionewz.com,animemojo.com,comicbookmovie.com,fearhq.com,gamefragger.com,mtvuutiset.fi,sffgazette.com,theringreport.com,toonado.com##+js(set, GSvars.addressTracking, false)
 
@@ -4597,7 +4618,7 @@ buffalonews.com##+js(set, lee_trkLinkSrc, noopFunc)
 ! https://github.com/DandelionSprout/adfilt/issues/874
 !!! forbes.com##+js(set, trackingService.track, noopFunc)
 
-! @@ ——— @@ Allowlist @@ ——— @@ !
+! 🌞 @@ ——— @@ Allowlist @@ ——— @@ 🌞 !
 ! https://github.com/DandelionSprout/adfilt/commit/6dd010c70438a84cae7cf6b683d0d99dc56794ad
 @@mailinglist$removeparam=/^utm_/i
 
