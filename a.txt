@@ -1,6 +1,6 @@
 [Adblock Plus 3.18]
 ! Title: 🏡 a.txt (Imres filtre)
-! Version: 01March2024v1-Personal
+! Version: 10March2024v1-Personal
 ! Expires: 12 hours
 ! Description: This list, and any other lists whose version is suffixed with "-Personal", are _NOT_ intended for public use, except for 1) those who wish to authentically reproduce my list setup in issue reports, and 2) enthusiasts who want to try out pre-spin-off pre-alpha list concepts of mine.
 !#if !env_mv3
@@ -32,6 +32,14 @@
 !#include Sandbox/deviantART%20Sanity%20Test%20List.txt
 !#include AntiFakeTransparentImagesList.txt
 !#include AntiCorruptSportsList.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/bilibili.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/douban.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/iqiyi.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/mail_ru.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/odnoklassniki.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/weibo.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/xiaohongshu.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/zhihu.txt
 !#if !adguard
 !#include UndertaleRemoverForSoundCloud.txt
 !#endif
@@ -561,6 +569,7 @@ tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog 
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i)
 steamdb.info#?#.tooltipped:has-text(PCGW)
 ||motvind.org^$all
+||wind-watch.org^$all
 !#if false
 ||app.element.io^$doc,popup
 !#endif
@@ -572,6 +581,7 @@ deviantart.com##a[href*="?topic="]:is([href*=powerpuff],[href*=equestria i],[hre
 svt.se,aftonbladet.se,op.se,yle.fi,ltz.se,jamtlandstidning.se,jamtlandsgratistidning.se##a[href*=kalle-anka i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,theguardian.com##a[href*=solbakken i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,theguardian.com##a[href*=sport i][href*=scoring i]
+adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,theguardian.com##a[href*=johaug i]
 nrk.no##a[href*=filmpolitiet]
 fandom.com#?#.mw-changeslist-human:has-text(/ Fanon:./)
 twe.no##div[data-id=asset-card-similar i]
@@ -588,6 +598,7 @@ reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/^.*\.io$/))
 reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/^.*\.to$/))
 reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)instagram\.com$/))
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=pregnan])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=inflation])
 google.*##.isv-r:has([href*=".tumblr.com/"]:is([href*=confessions],[href*=-baby-],[href*=-kpop-],[href*=moodboard],[href*="asmr."],[href*="://ask-the"],[href*="://askall"],[href*=timmy][href*=tecna],[href*=incorrect][href*=quote],[href*="-icons."],[href*=mintyisdrawing]))
 google.*#?#.isv-r:has-text(/cgam\ingwik\i/i)
 lostmediawiki.com##.mw-changeslist-line:has-text(The Wiggles )
@@ -600,11 +611,21 @@ tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/mini
 tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/minister[ -]of[ -]spring/i):not(:has-text(/minister[ -]of[ -](winter|summer|fall)/i)):upward(div[data-cell-id])
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/minister[ -]of[ -]spring/i):not(:has-text(/minister[ -]of[ -](winter|summer|fall)/i))
 adressa.no##a[href*=fotball i]
+adressa.no##a[href*=rbk i]
+adressa.no##a[href*=rosenborg i]
+*fanon.fandom.com^$doc
+*parody.fandom.com^$doc
 
 !if !env_mobile
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"]):has-text(/fe{2}t\ies/i)
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt^="blocked," i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=pregnan i])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=crybaby i])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=littleeinstein i])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=baby cloth i])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=shrunk i][cloth i])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=oot i][alt*=worship i])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"][data-gtm-user-id="70223367"])
 reports.adblockplus.org###reports:style(min-height: 2100px !important)
 reports.adblockplus.org##.slick-viewport:style(min-height: 2100px !important)
 !#endif
@@ -612,6 +633,11 @@ reports.adblockplus.org##.slick-viewport:style(min-height: 2100px !important)
 pixiv.net##.works-item:has(img[alt=feeties i])
 pixiv.net##.works-item:has(img[alt^="blocked," i])
 pixiv.net##.works-item:has(img[alt*=pregnan i])
+pixiv.net##.works-item:has(img[alt*=crybaby i])
+pixiv.net##.works-item:has(img[alt*=littleeinstein i])
+pixiv.net##.works-item:has(img[alt*=baby cloth i])
+pixiv.net##.works-item:has(img[alt*=shrunk i][cloth i])
+pixiv.net##.works-item:has(img[alt*=oot i][alt*=worship i])
 !#endif
 !#if !adguard
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment,.thing,shreddit-comment,article.w-full:has-text(/Morb/i)
@@ -634,8 +660,8 @@ www.adressa.no##a[href*=trdby]
 tumblr.com#?#:is(.post,article,div[data-cell-id][style],div[tabindex]:is([style^=m],[data-id]:not([class*=" "]),:not([style],[class]))):has-text(/gaza|palest\in|israel|protests|(\s|#)ha\mas|z\ion/i)
 ! None of those people have the slightest tiniest idea what a game challenge is. Every single one of theirs is worse than even standard Nuzlocke. I could create a better Sims challenge with my toes on the keyboard and blindfolded.
 modthesims.info###creativityforums
-! I don't have any consistent energy anymore, and it's been like this for 13 months at the time of writing. I feel empty like a cube of air.
-github.com##.d-none[href*="DandelionSprout/adfilt" i] ~ div .react-directory-row:has-text(/HappyTimeFunClub|RickrollLinkIdentifier|AssistantReborn|ExtremelyCondensedList|GDPR\s451|Battle\sRoyale|Fake\sNotification\s|Username\sHider|Google\sHangout|TwitterPureReadingExperience|AmazonListForTwitch|DisallowedIPs|AnnoyingBannersAndOverlays|\sCarols|Pro-LED/i):style(background-color: #5E3350 !important)
+! I don't have any consistent energy anymore, and it's been like this for 14 months at the time of writing. I feel empty like a cube of air.
+github.com##.d-none[href*="DandelionSprout/adfilt" i] ~ div .react-directory-row:has-text(/HappyTimeFunClub|RickrollLinkIdentifier|AssistantReborn|ExtremelyCondensedList|GDPR\s451|Battle\sRoyale|Fake\sNotification\s|Username\sHider|Google\sHangout|TwitterPureReadingExperience|AmazonListForTwitch|DisallowedIPs|AnnoyingBannersAndOverlays|\sCarols|Pro-LED|AntiPorkMeatOnRestaurantMenusList|AncientLibrary|Anti-Skype\sList/i):style(background-color: #5E3350 !important)
 
 ! People I just really don't like, without it being deserving of going on public lists
 github.com#?#div[id^=issue_]:has-text(/\skulf\o\on/)
@@ -647,13 +673,14 @@ nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,n
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=julius_zimmerman])
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=twistedscarlett])
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,theguardian.com##a[href*=kyrgios i]
+adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,theguardian.com##a[href*=anthony i][href*=joshua i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*=tennisstjerne i]:not([href*=casper i],[href*=ruud i])
 tumblr.com#?#article:has-text(/\malark\E\y/i):upward(4)
 ! I hate that guy so much. He was one of two people who plunged me into deep suicidal depression in October 2023, to the point I had medical crew check in on me in my apartment twice. I'm so fucking tired of humans and everything in the world.
 discord.com##div[class^=memberInner--]:has-text(/k6k[аa]/)
 discord.com##div[class^=member_]:has-text(/k6k[аa]/)
 discord.com##div[class*=zalgo i]:has(div[class*=blocked i])
-discord.com##h3[class*=membersGroup__]:has-text(/^Server\soperators.\s/)
+!!!discord.com##h3[class*=membersGroup__]:has-text(/^Server\soperators.\s/)
 discord.com##[class^=messageListItem__]:has(div[id^=message-reply-context-]:has-text(/^@k6k[аa]/))
 .com/wiki/The_Sims_Wiki:Administrators%27_noticeboard^$all
 
@@ -852,7 +879,7 @@ google.*##.g:has(a[href*="simkl.com"])
 
 ! Guess I can extend my adblocking to IPTV too or something. I wasn't entirely awake-type there when I wrote this.
 twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(/mer{2}\y|jul|chr\ist|kr\istus|x\mas|Pre\m\ier League|Ugl[еe]huset|Netfl\ix\s-\sse|snø|(^|\s)al\iens|nøt{2}|n\is{2}e|t\inka|hol\ida\y|housew\ives|Blue\y|palvelus|gud|anda[kg]t|galtung|jesus|shofar|(sprek|g\ym).*sof\ia|U\E\FA Cha\mp\ion|Manchester (Un\ited|C\ity)|Arsenal|Burnle\y|V\i (bare|baby) bjørn|powerpuf{2}|event\yrt\id|Mr\.? Bean|Fulha\m|Brentford|U\F\O|trädgård|t\ivol\i|Kardash\ian|J\ingle|heks|w\itch|b\ibel|k\irke|Donald Duck|Kal{2}e Anka|Anders And|All that re\ma\ins|hø[yjg]t\id|^You\Tube$|^TV ?2 Play$|Sva\mpebob|Trond Al\i|Aston V\il{2}a|Greetings| Halls|Bert\il|We\ihnacht|beb\is|joulu|ankka|claus|fra alle os|grimm og |kvelden før|Love Actually|Holly|Grinch|evangel\i|baby|aang| korra|salme|alf prøysen|sanc?ta|Radio ?3[,.]?16|Shrek.*(Lykkelig|Forever)|ny(tt)?år|abu dhab\i|OL .*(Beiji|2022)|uudenvuod|Sunderland|Rally:? Dakar|Hailey\'?s list|P\imple Popper|Thomas (och|og|and|&) |In ?Touch ?Minist|West\sHam\s|\sp7\s|o(d|đ){2}asat|Nytt på Nytt|Fantus|Gravid|Unga Mammor|Kevin Can Wait|storasyster|fjert|promp/i))
-twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(ÆSJ)
+twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(ÆSJ))
 
 ! Shows of great cultural significance, shows that are scarcely aired, or simply shows that are good.
 twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(/Efter nio|Space Nova|Flyhavarikommisjonen|Bodø[/-]?Glimt|Molde|Elinn?or undrar så|Skattsökarna|ePrix|Avisrunden|Tara Duncan|Den bitte lille ridder|Sportsday|Kiff|Alice i Eventyrbakeri|Doktor McStuffins|flugt|flukt|K[yi]rgy[zs]|Rugby|Six Nations|Zouk|Muhamm[ea]d Ali|Bayala|Disneydags|pyttelilla riddar|Regnbågsstad|Fix (&|och|og) Trix|DDR|Domus|Grønland|Dokument utifrån|Bitz (&|och|og) Bob|Trans World Sport|Cricket|Kolstad|Wallykazam|Brennpunkt|Droners|Penn Zero|Gurken (&|og|och) N[øö]tt|(Danny|Randy) Cunningham|Family Guy|Corn (&|og|och) Peg|To på rømmen|Trassel|To på flugt|Minneapolis|Big Hero 6|[øö]stblo[ck]|Portland/i)):style(background-color: #006600 !important)
