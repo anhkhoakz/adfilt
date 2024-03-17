@@ -1,6 +1,6 @@
 [Adblock Plus 3.18]
 ! Title: 🏡 a.txt (Imres filtre)
-! Version: 10March2024v1-Personal
+! Version: 16March2024v1-Personal
 ! Expires: 12 hours
 ! Description: This list, and any other lists whose version is suffixed with "-Personal", are _NOT_ intended for public use, except for 1) those who wish to authentically reproduce my list setup in issue reports, and 2) enthusiasts who want to try out pre-spin-off pre-alpha list concepts of mine.
 !#if !env_mv3
@@ -50,7 +50,7 @@
 !#include AntiMV3List.txt
 !#endif
 
-! ——/——/——/——/——/——/——/——/——/——/——/——/——/——/——/——
+! ——/——/——/——/——/——/——/——/——/——/——/——/——/——/——/——/——/——/——/——/——/——/——
 
 metacritic.com###primary_menu_item_games
 nexusmods.com#?#li.mod-tile:has-text(Queen Vanessa)
@@ -77,6 +77,7 @@ nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,n
 e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=mlp][data-tags*=sparky]
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=angels_with_scaly_wings])
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title~=kaa][title*=hypno])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title~=bimbo_lips])
 rule34.xxx###subnavbar a[href="mailto:dmca@booru.org"]
 store.playstation.com#?#.psw-l-grid > li:has-text(/Angels\sw\ith\sScal\y\sW\ings/i)
 netflix.com##.notifications
@@ -209,6 +210,8 @@ tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:h
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#.*(#|\s)hc(#|\s).*\snote/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i)
+tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i)
+tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#.*headcann?on/i)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/\mo{2}dboard/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/tourna\ment/i):has-text(/pol{2}/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/st\i\mboard/i):watch-attr(class):watch-attr(style)
@@ -298,6 +301,8 @@ tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#.*kpop.*
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#.*(#|\s)hc(#|\s).*\snote/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i):watch-attr(class):watch-attr(style)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i):watch-attr(class):watch-attr(style)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#.*headcann?on/i):watch-attr(class):watch-attr(style)
 !#if false
 tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/\mo{2}dboard/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/tourna\ment/i):has-text(/pol{2}/i)
@@ -388,6 +393,7 @@ tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*kpop.*note/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*(#|\s)hc(#|\s).*\snote/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i)
+tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i)
 !#endif
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/\mo{2}dboard/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/tourna\ment/i):has-text(/pol{2}/i)
@@ -478,6 +484,7 @@ tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#.*k
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#.*(#|\s)hc(#|\s).*\snote/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i)
+tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/\mo{2}dboard/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/tourna\ment/i):has-text(/pol{2}/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/st\i\mboard/i)
@@ -567,6 +574,7 @@ tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog 
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/#.*(#|\s)hc(#|\s).*\snote/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i)
+tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i)
 steamdb.info#?#.tooltipped:has-text(PCGW)
 ||motvind.org^$all
 ||wind-watch.org^$all
@@ -601,7 +609,7 @@ rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentacl
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=inflation])
 google.*##.isv-r:has([href*=".tumblr.com/"]:is([href*=confessions],[href*=-baby-],[href*=-kpop-],[href*=moodboard],[href*="asmr."],[href*="://ask-the"],[href*="://askall"],[href*=timmy][href*=tecna],[href*=incorrect][href*=quote],[href*="-icons."],[href*=mintyisdrawing]))
 google.*#?#.isv-r:has-text(/cgam\ingwik\i/i)
-lostmediawiki.com##.mw-changeslist-line:has-text(The Wiggles )
+lostmediawiki.com##.mw-changeslist-line:has-text(/The\sW\iggles\s|F\il\ip\ino/)
 fyndiq.no##article:has-text(Nativity)
 dominos.*#?#div[class^=CardGrid_grid__] > div:not([class],[id]):has-text(/pepperoni|bacon|skinke|BBQ-saus|sopp|jalapeños/i)
 peppes.no#?#.product-section > div:has-text(/pepperoni|bacon|skinke|BBQ-saus|sopp|jalape[ñn]o|nduja|salami|Blue ?Cheese/i)
@@ -615,6 +623,7 @@ adressa.no##a[href*=rbk i]
 adressa.no##a[href*=rosenborg i]
 *fanon.fandom.com^$doc
 *parody.fandom.com^$doc
+disneyplus.com##.slick-slide:style(opacity: 1 !important)
 
 !if !env_mobile
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"]):has-text(/fe{2}t\ies/i)
@@ -622,7 +631,7 @@ pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt^="blocked," i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=pregnan i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=crybaby i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=littleeinstein i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=baby cloth i])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*="baby cloth" i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=shrunk i][cloth i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=oot i][alt*=worship i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"][data-gtm-user-id="70223367"])
@@ -635,7 +644,7 @@ pixiv.net##.works-item:has(img[alt^="blocked," i])
 pixiv.net##.works-item:has(img[alt*=pregnan i])
 pixiv.net##.works-item:has(img[alt*=crybaby i])
 pixiv.net##.works-item:has(img[alt*=littleeinstein i])
-pixiv.net##.works-item:has(img[alt*=baby cloth i])
+pixiv.net##.works-item:has(img[alt*="baby cloth" i])
 pixiv.net##.works-item:has(img[alt*=shrunk i][cloth i])
 pixiv.net##.works-item:has(img[alt*=oot i][alt*=worship i])
 !#endif
