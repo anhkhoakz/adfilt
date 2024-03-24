@@ -1,6 +1,6 @@
 [Adblock Plus 3.18]
 ! Title: 🏡 a.txt (Imres filtre)
-! Version: 16March2024v1-Personal
+! Version: 22March2024v1-Personal
 ! Expires: 12 hours
 ! Description: This list, and any other lists whose version is suffixed with "-Personal", are _NOT_ intended for public use, except for 1) those who wish to authentically reproduce my list setup in issue reports, and 2) enthusiasts who want to try out pre-spin-off pre-alpha list concepts of mine.
 !#if !env_mv3
@@ -105,18 +105,18 @@ deviantart.com##a[data-hook][href*="/art/"][href*="/caine-" i]
 deviantart.com##a[data-hook][href*="/art/"]:is([href*=specialist i],[href*=timmy i],[href*=brandon i]):is([href*=winx i],[href*=tecna i],[href*=bloom i],[href*=stella i],[href*=musa i],[href*=alfea i])
 deviantart.com##a[data-hook][href*="/art/"][href*=chelsea i]:is([href*=athena i],[href*=flounder i],[href*=ariel i],[href*=alle i],[href*=sebastian i])
 deviantart.com##div[class^=_]:nth-of-type(2):last-of-type a[href*="/team/journal/"]:upward(2)
-kemono.party#?#.post-card:-abp-has(a:has-text(/ Chapter [1-9]/i))
-kemono.party#?#.post-card:-abp-has(a:has-text(/ Ch\. [1-9]/))
+kemono.party#?#.post-card:-abp-has(a:has-text(/\sChapter\s[1-9]/i))
+kemono.party#?#.post-card:-abp-has(a:has-text(/\sCh\.\s[1-9]/))
 soundcloud.com#?#.badgeList__item,.g-scrollable-inner li,.systemPlaylistTrackList__item,.playableTile,.sound:has-text(/Tourna\ment/i)
 soundcloud.com#?#.badgeList__item,.g-scrollable-inner li,.systemPlaylistTrackList__item,.playableTile,.sound:has-text(/Tourney/i)
 ||fileplanet.com^$all
-finn.no##.ads__unit:has(a[href*="/job/"]):has-text(/Selger | salg\?|salgskar{2}\iere|But\ik{2}selger|salgs|inkas{2}o|salgskonsulent|[sS]elgere|BPA|UPH\EADS|salgsas{2}\istent|R[eE][mM][aA]\s1000|Storcash|Berge\sBe\man{2}\ing|Fretex|B\itastad|E\m\irates A\irl\ine/)
+finn.no##.ads__unit:has(a[href*="/job/"]):has-text(/Selger\s|\ssalg\?|salgskar{2}\iere|But\ik{2}selger|salgs|inkas{2}o|salgskonsulent|[sS]elgere|BPA|UPH\EADS|salgsas{2}\istent|R[eE][mM][aA]\s1000|Storcash|Berge\sBe\man{2}\ing|Fretex|B\itastad|E\m\irates\sA\irl\ine/)
 foodora.no#?#.vendor-tile-wrapper:has-text(Pizz):not(:has-text(Egon))
 microsoft.com#?##primaryR1:style(padding-left: 2% !important; padding-right: 0% !important)
 twitch.tv#?#.tw-transition:has-text(/V\inesauce|F\I\FA|Overwatch|World\sof\sWarcraft|Mele{2}|Hearthstone|League\sof\sLegends/)
 netflix.com##.lolomoRow:has(svg[id^=rank])
 netflix.com##.billboard-row
-vinmonopolet.no##.product-item:has-text(/ Øl |Chardon{2}a\y|Lager|Muscat|R\isel\ing|Rosé|We\is{2}e|Mart\in\i|P\inot No\ir|Sauv\ignon|P\ilsner|Carlsberg/)
+vinmonopolet.no##.product-item:has-text(/\sØl\s|Chardon{2}a\y|Lager|Muscat|R\isel\ing|Rosé|We\is{2}e|Mart\in\i|P\inot\sNo\ir|Sauv\ignon|P\ilsner|Carlsberg/)
 finn.no###buyer-experience-collections-podlet-app
 deviantart.com##div[style^="width:"][style*="display:"]:has(img[alt*="Adopts " i])
 ||pcgamingwiki.com^$all
@@ -133,7 +133,7 @@ tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:h
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/paul\s?planted/i):not(:has-text(/\jake|logan|garden|tre{2}|beatle/i))
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/god\s?gave\s?the\s?\increase/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#k\jv.*note/i)
-tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/(\s|#)[0-9]?\s?(revelato?\ion|job|psal\m|exodus|ephes\ians?|hebrews|proverbs|john|\jere\m\iah?|ro\mans?|peter|thess?alon\ians?|deuterono\m\y|\mat{2}hew) ?[0-9]{1,2}:[0-9]/i)
+tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/(\s|#)[0-9]?\s?(revelato?\ion|job|psal\m|exodus|ephes\ians?|hebrews|proverbs|john|\jere\m\iah?|ro\mans?|peter|thess?alon\ians?|deuterono\m\y|\mat{2}hew)\s?[0-9]{1,2}:[0-9]/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/seven\s?sp\ir\its\s?of\s?god/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/da\il\y\s?bread/i):has-text(/n\ightl\y\s?bread/i):not(:has-text(/bake|fo{2}d/i))
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/bo{2}k\s?of\s?\moses/i)
@@ -173,7 +173,7 @@ tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:h
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#.*headcanons?\s.*note/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/strawberr\y\sshortcake/i):has-text(2003)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/infect|berr\y|fru\it|fo{2}d/i):has-text(/\mou?ld/i)
-tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/(s3|s\i\ms\s?[234]?) ?le[gp]ac\y/i)
+tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/(s3|s\i\ms\s?[234]?)\s?le[gp]ac\y/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#lepac\y.*note/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#decades\s?chal{2}enge.*note/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/(\s|#|n)z\ine([.,:;?!s=_#’“”-]|\s|\'|\"|$)/i)
@@ -210,8 +210,10 @@ tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:h
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#.*(#|\s)hc(#|\s).*\snote/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i)
-tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i)
+tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/daughter|pregnan/i):has-text(/d\isney[ -]?fa\ir\ies|ir\idessa|s\ilver\m\ist|v\id\ia|zar\ina|per\iw\inkle|p\ix\ie[ -]?hollow/i)
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/#.*headcann?on/i)
+tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/p\icrew/i)
+tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/fa\ir\iesandbeatleslover/i)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/\mo{2}dboard/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/tourna\ment/i):has-text(/pol{2}/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/st\i\mboard/i):watch-attr(class):watch-attr(style)
@@ -224,7 +226,7 @@ tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/apol{2}os
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/paul\s?planted/i):not(:has-text(/\jake|logan|garden|tre{2}|beatle/i)):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/god\s?gave\s?the\s?\increase/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#k\jv.*note/i):watch-attr(class):watch-attr(style)
-tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/(\s|#)[0-9]?\s?(revelato?\ion|job|psal\m|exodus|ephes\ians?|hebrews|proverbs|john|\jere\m\iah?|ro\mans?|peter|thess?alon\ians?|deuterono\m\y|\mat{2}hew) ?[0-9]{1,2}:[0-9]/i):watch-attr(class):watch-attr(style)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/(\s|#)[0-9]?\s?(revelato?\ion|job|psal\m|exodus|ephes\ians?|hebrews|proverbs|john|\jere\m\iah?|ro\mans?|peter|thess?alon\ians?|deuterono\m\y|\mat{2}hew)\s?[0-9]{1,2}:[0-9]/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/seven\s?sp\ir\its\s?of\s?god/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/da\il\y\s?bread/i):has-text(/n\ightl\y\s?bread/i):not(:has-text(/bake|fo{2}d/i)):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/bo{2}k\s?of\s?\moses/i):watch-attr(class):watch-attr(style)
@@ -264,7 +266,7 @@ tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#rant\s?o
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#.*headcanons?\s.*note/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/strawberr\y\sshortcake/i):has-text(2003):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/infect|berr\y|fru\it|fo{2}d/i):has-text(/\mou?ld/i):watch-attr(class):watch-attr(style)
-tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/(s3|s\i\ms\s?[234]?) ?le[gp]ac\y/i):watch-attr(class):watch-attr(style)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/(s3|s\i\ms\s?[234]?)\s?le[gp]ac\y/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#lepac\y.*note/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#decades\s?chal{2}enge.*note/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/(\s|#|n)z\ine([.,:;?!s=_#’“”-]|\s|\'|\"|$)/i):watch-attr(class):watch-attr(style)
@@ -301,99 +303,12 @@ tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#.*kpop.*
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#.*(#|\s)hc(#|\s).*\snote/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i):watch-attr(class):watch-attr(style)
-tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i):watch-attr(class):watch-attr(style)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/daughter|pregnan/i):has-text(/d\isney[ -]?fa\ir\ies|ir\idessa|s\ilver\m\ist|v\id\ia|zar\ina|per\iw\inkle|p\ix\ie[ -]?hollow/i):watch-attr(class):watch-attr(style)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/#.*headcann?on/i):watch-attr(class):watch-attr(style)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/p\icrew/i):watch-attr(class):watch-attr(style)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/fa\ir\iesandbeatleslover/i):watch-attr(class):watch-attr(style)
 !#if false
 tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/\mo{2}dboard/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/tourna\ment/i):has-text(/pol{2}/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/st\i\mboard/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*incor{2}ect[a-z0-9 ]{0,20}quote.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/fancast/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/bab\y\s?factor\y/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(\s|#)god\s\is\slove/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(\s|#)1\s?c\or\inth\ians/i):not(:has-text(/braz\il|pla\yer|fo{2}tbal{2}|soc{2}er|copa/i))
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/apol{2}os\s?water/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/paul\s?planted/i):not(:has-text(/\jake|logan|garden|tre{2}|beatle/i))
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/god\s?gave\s?the\s?\increase/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#k\jv.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(\s|#)[0-9]?\s?(revelato?\ion|job|psal\m|exodus|ephes\ians?|hebrews|proverbs|john|\jere\m\iah?|ro\mans?|peter|thess?alon\ians?|deuterono\m\y|\mat{2}hew) ?[0-9]{1,2}:[0-9]/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/seven\s?sp\ir\its\s?of\s?god/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/da\il\y\s?bread/i):has-text(/n\ightl\y\s?bread/i):not(:has-text(/bake|fo{2}d/i))
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/bo{2}k\s?of\s?\moses/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/scr\ipture(\s|-)?p\ic/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/there\in\s?\in\s\jesus\'?s?\s?na\me/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(\s|#)jesus\s(sa\y|sa\id)/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/can\s?get\s?to\s?\jesus/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/saved?\s?(her|h\is|the\ir)\s?(mo\m|dad|\mother|father|papa|\ma\ma)\'?s?\s?soul/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/glor\y\s?of\s?god([.,:;?!=_#’“”-]|\s|\'|\"|$)/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#Chr\ist\ian\it\y.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#Cathol\ic.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#wh\ite\s?\is\s?beaut\iful.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#wh\ite\s?sp\ir\itual.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(F|(\s|#)f)o{2}t\s?porn/)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/pro-?b\irth/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/l\ife-?advocate/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/w\itch\s?aesthet\ic/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/w\itchblr/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/t\i\m\m\y/i):has-text(/tecna/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/tec\m\y/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/\jack\s?frost/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/star\s?catcher/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/star\s?w\ishes/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/spr\out/i):has-text(/\mlp|p\on\y|h\orse|g5/i):not(:has-text(/dande/i))
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/w\izardblr/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/tourn[ea]/i):has-text(/bracket/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(\s|#)agere\s/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(\s|#)age\s?regress\i/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(#|\s)blue\y/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/c\o\mf\ort\s?character/i):not(:has-text(/fa\ir|w\inx|w\.i\.t|n\ights/i))
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text( tarot )
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/sparkeron\i/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(\s|#)spark\y/i):has-text(/\mlp|pon\y|pon\ies|dragon|h\itch|bab\y/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/ruby(\s|-)?x?(\s|-)?neo/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/c\iss\ie/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#rant\s?over.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*headcanons?\s.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/strawberr\y\sshortcake/i):has-text(2003)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/infect|berr\y|fru\it|fo{2}d/i):has-text(/\mou?ld/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(s3|s\i\ms\s?[234]?) ?le[gp]ac\y/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#lepac\y.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#decades\s?chal{2}enge.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/(\s|#|n)z\ine([.,:;?!s=_#’“”-]|\s|\'|\"|$)/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/DNI:/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/^lgc/)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#lgc:.*note/)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#God\s?\is\s?lov[ei].*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*headcan{2}on.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#d\isne\y\s?next\s?gen.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/d\isne\y\s?descendants/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#gacha(\s?club|\s?oc|\s?#).*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/lo{2}k\s?how\s?the\y\s?\mas{2}ace?red\s?\m\y/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/e{2}ve{2}lut\ion/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#tho\mas\s?(and|&)\s?fr\iends.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#tho\mas\s?the\s?tank\s?eng\ine.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/drea\mworks|rub\y|chelsea/i):has-text(/(\s|#)(hal{2}e|halee)/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*(\s|#)x\sreader(\s|#).*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/ra\yfrog/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/ra(mon|\y\man)\s?[x×]\s?bul{2}frog/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/bul{2}frog\s?[x×]\s?ra(mon|\y\man)/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#chr\ist\mas#.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#hal{2}owe{2}n#.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*chr\ist\s?\jesus.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(ARAB WORLD NEWS:)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/secrets?\s?of\s?starl\ight/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#(chr\ist\ian|cathol\ic|b\ibl).*(fa\ith|g\irl|wo\man).*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/tradblr/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#(trad|b\ibl).*(fa\m\il\y\svalue|\marr\iage|\mascul\in|relat\ionsh\ip).*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#rel\ig\io(n|us)\s?(mov\ie|f\ilm).*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*a\maz\ing.*d\ig\ital.*c\ircus.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*tadc.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*po\mn\i.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*kpop.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*(#|\s)hc(#|\s).*\snote/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i)
 !#endif
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/\mo{2}dboard/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/tourna\ment/i):has-text(/pol{2}/i)
@@ -407,7 +322,7 @@ tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/apol
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/paul\s?planted/i):not(:has-text(/\jake|logan|garden|tre{2}|beatle/i))
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/god\s?gave\s?the\s?\increase/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#k\jv.*note/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/(\s|#)[0-9]?\s?(revelato?\ion|job|psal\m|exodus|ephes\ians?|hebrews|proverbs|john|\jere\m\iah?|ro\mans?|peter|thess?alon\ians?|deuterono\m\y|\mat{2}hew) ?[0-9]{1,2}:[0-9]/i)
+tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/(\s|#)[0-9]?\s?(revelato?\ion|job|psal\m|exodus|ephes\ians?|hebrews|proverbs|john|\jere\m\iah?|ro\mans?|peter|thess?alon\ians?|deuterono\m\y|\mat{2}hew)\s?[0-9]{1,2}:[0-9]/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/seven\s?sp\ir\its\s?of\s?god/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/da\il\y\s?bread/i):has-text(/n\ightl\y\s?bread/i):not(:has-text(/bake|fo{2}d/i))
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/bo{2}k\s?of\s?\moses/i)
@@ -447,7 +362,7 @@ tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#ran
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#.*headcanons?\s.*note/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/strawberr\y\sshortcake/i):has-text(2003)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/infect|berr\y|fru\it|fo{2}d/i):has-text(/\mou?ld/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/(s3|s\i\ms\s?[234]?) ?le[gp]ac\y/i)
+tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/(s3|s\i\ms\s?[234]?)\s?le[gp]ac\y/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#lepac\y.*note/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#decades\s?chal{2}enge.*note/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/(\s|#|n)z\ine([.,:;?!s=_#’“”-]|\s|\'|\"|$)/i)
@@ -484,7 +399,9 @@ tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#.*k
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#.*(#|\s)hc(#|\s).*\snote/i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i)
+tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/daughter|pregnan/i):has-text(/d\isney[ -]?fa\ir\ies|ir\idessa|s\ilver\m\ist|v\id\ia|zar\ina|per\iw\inkle|p\ix\ie[ -]?hollow/i)
+tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/p\icrew/i)
+tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/fa\ir\iesandbeatleslover/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/\mo{2}dboard/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/tourna\ment/i):has-text(/pol{2}/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/st\i\mboard/i)
@@ -497,7 +414,7 @@ tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog 
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/paul\s?planted/i):not(:has-text(/\jake|logan|garden|tre{2}|beatle/i))
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/god\s?gave\s?the\s?\increase/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/#k\jv.*note/i)
-tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/(\s|#)[0-9]?\s?(revelato?\ion|job|psal\m|exodus|ephes\ians?|hebrews|proverbs|john|\jere\m\iah?|ro\mans?|peter|thess?alon\ians?|deuterono\m\y|\mat{2}hew) ?[0-9]{1,2}:[0-9]/i)
+tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/(\s|#)[0-9]?\s?(revelato?\ion|job|psal\m|exodus|ephes\ians?|hebrews|proverbs|john|\jere\m\iah?|ro\mans?|peter|thess?alon\ians?|deuterono\m\y|\mat{2}hew)\s?[0-9]{1,2}:[0-9]/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/seven\s?sp\ir\its\s?of\s?god/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/da\il\y\s?bread/i):has-text(/n\ightl\y\s?bread/i):not(:has-text(/bake|fo{2}d/i))
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/bo{2}k\s?of\s?\moses/i)
@@ -537,7 +454,7 @@ tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog 
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/#.*headcanons?\s.*note/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/strawberr\y\sshortcake/i):has-text(2003)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/infect|berr\y|fru\it|fo{2}d/i):has-text(/\mou?ld/i)
-tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/(s3|s\i\ms\s?[234]?) ?le[gp]ac\y/i)
+tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/(s3|s\i\ms\s?[234]?)\s?le[gp]ac\y/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/#lepac\y.*note/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/#decades\s?chal{2}enge.*note/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/(\s|#|n)z\ine([.,:;?!s=_#’“”-]|\s|\'|\"|$)/i)
@@ -574,7 +491,7 @@ tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog 
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/c\is\s?het.*(dn\i|do\s?n\'?o?t\s?\interact)/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/#.*(#|\s)hc(#|\s).*\snote/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/#.*(\s|#)l\iberal\sbs(\s|#).*/i)
-tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/daughter|pregnan/i):has-text(/disney[ -]?fairies|iridessa|silvermist|vidia|zarina|periwinkle|pixie[ -]?hollow/i)
+tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/daughter|pregnan/i):has-text(/d\isney[ -]?fa\ir\ies|ir\idessa|s\ilver\m\ist|v\id\ia|zar\ina|per\iw\inkle|p\ix\ie[ -]?hollow/i)
 steamdb.info#?#.tooltipped:has-text(PCGW)
 ||motvind.org^$all
 ||wind-watch.org^$all
@@ -591,39 +508,51 @@ adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,the
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,theguardian.com##a[href*=sport i][href*=scoring i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,theguardian.com##a[href*=johaug i]
 nrk.no##a[href*=filmpolitiet]
-fandom.com#?#.mw-changeslist-human:has-text(/ Fanon:./)
+fandom.com#?#.mw-changeslist-human:has-text(/\s\Fanon:./)
 twe.no##div[data-id=asset-card-similar i]
-rexxx.com##.item_video:has-text(/blow\s?job|milk\ing|hand\s?job|pen\is/i)
+rexxx.com##.item_video:has-text(/blow\s?\job|m\ilk\ing|hand\s?\job|pen\is/i)
 rule34.xxx##.pending-tag:has(td:nth-of-type(2):has-text(/\([012]\)$/)):style(background: black !important)
 rule34.xxx##.pending-tag:has(td:nth-of-type(2):has-text(/\(3\)$/)):style(background: orange !important)
 reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/^28$/))
 reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)youtube\.com$/))
-reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)twitter\.com$/))
-reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)twitch\.tv$/))
+reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)tw\itter\.com$/))
+reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)tw\itch\.tv$/))
 reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)db\.dk$/))
-reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)berlingske\.dk$/))
+reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)berl\ingske\.dk$/))
 reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/^.*\.io$/))
 reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/^.*\.to$/))
-reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)instagram\.com$/))
-rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=pregnan])
-rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=inflation])
+reports.adblockplus.org##div.slick-row:has(>.slick-cell:has-text(/(^|\.)instagra\m\.com$/))
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=pregnan],[title*=inflation])
 google.*##.isv-r:has([href*=".tumblr.com/"]:is([href*=confessions],[href*=-baby-],[href*=-kpop-],[href*=moodboard],[href*="asmr."],[href*="://ask-the"],[href*="://askall"],[href*=timmy][href*=tecna],[href*=incorrect][href*=quote],[href*="-icons."],[href*=mintyisdrawing]))
-google.*#?#.isv-r:has-text(/cgam\ingwik\i/i)
+google.*#?#.isv-r:has-text(/cga\m\ingw\ik\i/i)
 lostmediawiki.com##.mw-changeslist-line:has-text(/The\sW\iggles\s|F\il\ip\ino/)
 fyndiq.no##article:has-text(Nativity)
-dominos.*#?#div[class^=CardGrid_grid__] > div:not([class],[id]):has-text(/pepperoni|bacon|skinke|BBQ-saus|sopp|jalapeños/i)
-peppes.no#?#.product-section > div:has-text(/pepperoni|bacon|skinke|BBQ-saus|sopp|jalape[ñn]o|nduja|salami|Blue ?Cheese/i)
-egon.no#?#.menu-item-wrap:has-text(/Karbonade| reke|kalkunskinke|scampi|sopp|gorgonzola|jalape[nñ]o| mynte|ørret/i)
-foodora.no#?#.product-tile:has-text(/bacon|chorizo|svin|hvit ?vin|rødvin|reke[hcr]|skinke|salami|sopp|sjømat|gorgonzola|pølse|blåmugg/i)
-tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/minister[ -]of[ -]spring/i):not(:has-text(/minister[ -]of[ -](winter|summer|fall)/i)):upward(div[data-cell-id])
-tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/minister[ -]of[ -]spring/i):not(:has-text(/minister[ -]of[ -](winter|summer|fall)/i)):upward(div[data-cell-id])
-tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/minister[ -]of[ -]spring/i):not(:has-text(/minister[ -]of[ -](winter|summer|fall)/i))
+dominos.*#?#div[class^=CardGrid_grid__] > div:not([class],[id]):has-text(/pepperon\i|bacon|sk\inke|BBQ-saus|sopp|jalapeños/i)
+peppes.no#?#.product-section > div:has-text(/pepperon\i|bacon|sk\inke|BBQ-saus|sopp|jalape[ñn]o|ndu\ja|sala\m\i|Blue\s?Cheese/i)
+egon.no#?#.menu-item-wrap:has-text(/Karbonade|\sreke|kalkunsk\inke|sca\mp\i|sopp|gorgonzola|jalape[nñ]o|\s\m\ynte|ørret/i)
+foodora.no#?#.product-tile:has-text(/bacon|chor\izo|sv\in|hv\it\s?v\in|rødv\in|reke[hcr]|sk\inke|sala\m\i|sopp|sjømat|gorgonzola|pølse|blåmugg/i)
+tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/m\in\ister[ -]of[ -]spr\ing/i):not(:has-text(/m\in\ister[ -]of[ -](w\inter|su\m\mer|fall)/i)):upward(div[data-cell-id])
+tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/m\in\ister[ -]of[ -]spr\ing/i):not(:has-text(/m\in\ister[ -]of[ -](w\inter|su\m\mer|fall)/i)):upward(div[data-cell-id])
+tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/m\in\ister[ -]of[ -]spr\ing/i):not(:has-text(/m\in\ister[ -]of[ -](w\inter|su\m\mer|fall)/i))
 adressa.no##a[href*=fotball i]
 adressa.no##a[href*=rbk i]
 adressa.no##a[href*=rosenborg i]
 *fanon.fandom.com^$doc
 *parody.fandom.com^$doc
 disneyplus.com##.slick-slide:style(opacity: 1 !important)
+tvkampen.com##.match-list > div:has(a:is([href*=saud],[href*=aramco],[href*=jedda]))
+deezer.com##.page-alerts
+app.slack.com##.active-managed-focus-container > .p-peek_trigger
+bdsmx.tube#?#.thumb:has-text(/Man\s|Gu\y\s/)
+bdsmx.tube#?#.thumb:has-text(/hand\job/i)
+pornzog.com#?#.thumbs-list > li:has-text(Man )
+vault.bitwarden.com#?#tr.tw-border-solid:has-text(/Yoolando|dolph\in|t\ightshop|sk\itour2020|TABSelev|repo.or.cz|lxde|opprop|notabug|n\idaros\sdata|lofavor|happ\yb\ytes|ju\mpcloud\se\yeo|flattr|f\inentr\y|dogada|tulpa\.info/i)
+lostmediawiki.com##li.mw-search-result:has(a[href*=_build_],a[href*=_builds_],a[href*=saudi i],a[href*="/User:"],a[href*=wiggles i],a[href*=filipino i])
+lostmediawiki.com##div.mw-category-group li:has(a[href*=_build_],a[href*=_builds_],a[href*=saudi i],a[href*="/User:"],a[href*=wiggles i],a[href*=filipino i])
+||rule34.com^$domain=~bruk-rule-34-xxx-i-stedet.*
+epicgames.com#?#li[class^=css-]:has-text(/Card\sGa\me|Yo\m\i\s2|Faer\ia|DBG/)
+epicgames.com#?#li[class^=css-]:has-text(/tcg|card\sdefen|Yo\m\i\s2|Runeterra|ccg|Foretales|Inscr\ypt\ion|l\ix\sHeroes|Roguebook/i)
+epicgames.com#?#li[class^=css-]:has-text(/sol\ita\ir|mah\jong|j\igsaw|sakura/i)
 
 !if !env_mobile
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"]):has-text(/fe{2}t\ies/i)
@@ -650,7 +579,7 @@ pixiv.net##.works-item:has(img[alt*=oot i][alt*=worship i])
 !#endif
 !#if !adguard
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment,.thing,shreddit-comment,article.w-full:has-text(/Morb/i)
-reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment,.thing,shreddit-comment,article.w-full:has-text(/( |ago)Sl\int[ p]/i)
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment,.thing,shreddit-comment,article.w-full:has-text(/(\s|ago)Sl\int[ p]/i)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment,.thing,shreddit-comment,article.w-full:has-text(/Geo\metr\y\s?Dash/i)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment,.thing,shreddit-comment,article.w-full:has-text(/A\maz\ing\s?D\ig\ital\s?C\ircus|Po\mni/i)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment,.thing,shreddit-comment,article.w-full:has-text(/a[xr]\i[еe]l/i):not(:has-text(/w\inter|sof\ia/i))
@@ -670,7 +599,7 @@ tumblr.com#?#:is(.post,article,div[data-cell-id][style],div[tabindex]:is([style^
 ! None of those people have the slightest tiniest idea what a game challenge is. Every single one of theirs is worse than even standard Nuzlocke. I could create a better Sims challenge with my toes on the keyboard and blindfolded.
 modthesims.info###creativityforums
 ! I don't have any consistent energy anymore, and it's been like this for 14 months at the time of writing. I feel empty like a cube of air.
-github.com##.d-none[href*="DandelionSprout/adfilt" i] ~ div .react-directory-row:has-text(/HappyTimeFunClub|RickrollLinkIdentifier|AssistantReborn|ExtremelyCondensedList|GDPR\s451|Battle\sRoyale|Fake\sNotification\s|Username\sHider|Google\sHangout|TwitterPureReadingExperience|AmazonListForTwitch|DisallowedIPs|AnnoyingBannersAndOverlays|\sCarols|Pro-LED|AntiPorkMeatOnRestaurantMenusList|AncientLibrary|Anti-Skype\sList/i):style(background-color: #5E3350 !important)
+github.com##.d-none[href*="DandelionSprout/adfilt" i] ~ div .react-directory-row:has-text(/Happ\y\T\i\me\FunClub|R\ickrollL\ink\Ident\if\ier|Ass\istantReborn|Extre\mel\yCondensedL\ist|GDPR\s451|Battle\sRo\yale|Fake\sNot\if\icat\ion\s|Userna\me\sH\ider|Google\sHangout|Tw\itterPureRead\ing\Exper\ience|A\mazonL\ist\For\Tw\itch|D\isallowed\IPs|Anno\y\ingBannersAnd\Overla\ys|\sCarols|Pro-L\ED|Ant\iPork\Meat\OnRestaurant\MenusL\ist|Anc\ientL\ibrar\y|Ant\i-Sk\ype\sL\ist|Ant\iPepeL\ist/i):style(background-color: #5E3350 !important)
 
 ! People I just really don't like, without it being deserving of going on public lists
 github.com#?#div[id^=issue_]:has-text(/\skulf\o\on/)
@@ -710,7 +639,7 @@ discord.com##[class^=messageListItem__]:has(div[id^=message-reply-context-]:has-
 ! Caused by «uBlock Filters — Unbreak», which unhid around 20 empty boxes.
 @@||wikihow.com^$generichide,badfilter
 
-! I hate the weebs' total domination of Pixiv's translation system
+! 🇯🇵 I hate the weebs' total domination of Pixiv's translation system
 crowdin.com##.untranslated_phrase:has-text(アークナイツ)
 crowdin.com##.untranslated_phrase:has-text(アズールレーン)
 crowdin.com##.untranslated_phrase:has-text(ライブ!)
@@ -740,7 +669,7 @@ crowdin.com##.untranslated_phrase:has-text(ヤンデレ)
 crowdin.com##.untranslated_phrase:has-text(ネプテューヌ)
 crowdin.com##.untranslated_phrase:has-text(/^[ァ-ンー]{4}$/)
 
-! TikTok and Douyin
+! 🇨🇳 TikTok and Douyin
 ||tiktokcdn.com^
 ||tiktokv.com^
 ||tiktok.com^$third-party
@@ -752,39 +681,22 @@ crowdin.com##.untranslated_phrase:has-text(/^[ァ-ンー]{4}$/)
 ||bytedance.com/web/report^
 ||bytedance.com/websdk/v*/getInfo^
 
-! To attempt to reduce the amount of irrelevant sites (from a "Looking for sites to block ads on" perspective) on https://dnpedia.com/tlds/topm.php
-dnpedia.com#?#.ui-row-ltr:has-text(.kommune)
-dnpedia.com#?#.ui-row-ltr:has-text(legesenter)
-dnpedia.com#?#.ui-row-ltr:has-text(skole)
-dnpedia.com#?#.ui-row-ltr:has-text(sykehus)
-dnpedia.com#?#.ui-row-ltr:has-text(bank)
-dnpedia.com#?#.ui-row-ltr:has-text(hotel)
-dnpedia.com#?#.ui-row-ltr:has-text(butikk)
-dnpedia.com#?#.ui-row-ltr:has-text(parti)
-dnpedia.com#?#.ui-row-ltr:has-text(grill)
-dnpedia.com#?#.ui-row-ltr:has-text(vgs)
-dnpedia.com#?#.ui-row-ltr:has-text(klinikk)
-dnpedia.com#?#.ui-row-ltr:has-text(.ac.)
-dnpedia.com#?#.ui-row-ltr:has-text(.gov.)
-dnpedia.com#?#.ui-row-ltr:has-text(akademi)
-dnpedia.com#?#.ui-row-ltr:has-text(.edu.)
-
 ! Aims to make the site only show sites with hardware token support (Shouldn't be turned on 24/7)
 !!!2fa.directory##.table-success:not(:has(img[alt=U2F], .custom-hardware-popover))
 ! Makes airport flight checkers only show international flights (Unlikely to get a standalone list anytime soon, and shouldn't be turned on 24/7)
 !!!avinor.no##.flight-single:has-text(/Oslo|Bergen|Sandef\jord|Stavanger|Sandnes|Rørv\ik|Mo\s\i\sRana|Bodø|Na\msos|Brønnøysund|Mosjøen|Ålesund|Tro\msø|Harstad/)
 
-! Saudi Arabia
+! 🪦 Saudi Arabia
 ||sa^$doc,script,xmlhttprequest
 ! https://www.theguardian.com/media/2023/aug/15/vice-blocked-news-stories-that-could-offend-saudi-arabia-insiders-say
 ||vice.com^$all
 
-! ——— I swear idol fans are messed up. ———
-tumblr.com##div[data-timeline*="/blog/"] article:has-text(/\skms(\s|[!.])|アイドル|#idol\s|pripara/)
+! ——— 🇯🇵 I swear idol fans are messed up. ———
+tumblr.com##div[data-timeline*="/blog/"] article:has-text(/\sk\ms(\s|[!.])|アイドル|#idol\s|pr\ipara/)
 tumblr.com##div[data-testid=scroll-container] > div:only-of-type > div:last-of-type a[target][tabindex][href*=-kms-]
 osu.ppy.sh#?#.beatmapsets__item:has-text(Waifu)
 osu.ppy.sh#?#.beatmapsets__item:has-text(ラブライブ)
-crunchyroll.com#?#div:is([class^=carousel-scroller__card--],[class^=single-show-card--],[class^=release-episode-card-base--],.browse-card):has-text(/ \idol([.,:;?!s=_#’“”-]|\s|\'|\"|$)/|Love\s?L\ive|Id[o@]l\s?M[a@]ster|mus\ic.*star|stage\s?troup/i)
+crunchyroll.com#?#div:is([class^=carousel-scroller__card--],[class^=single-show-card--],[class^=release-episode-card-base--],.browse-card):has-text(/\s\idol([.,:;?!s=_#’“”-]|\s|\'|\"|$)/|Love\s?L\ive|Id[o@]l\s?M[a@]ster|mus\ic.*star|stage\s?troup/i)
 !#if !adguard
 soundcloud.com#?#.badgeList__item,.g-scrollable-inner li,.systemPlaylistTrackList__item,.playableTile,.sound:has-text(Halation)
 soundcloud.com#?#.badgeList__item,.g-scrollable-inner li,.systemPlaylistTrackList__item,.playableTile,.sound:has-text( halation)
@@ -801,7 +713,7 @@ www.youtube.com#?##dismissable,[lockup],#dismissible > .ytd-grid-video-renderer:
 
 ! Parent category: Media that annoys me
 
-! Anti-'Teen Titans 2003'
+! 🇺🇸 Anti-'Teen Titans 2003'
 ! Teen Titans GO deserves the right to exist, and the tens of millions of hipsters out there who believe otherwise are monumentally wrong. Therefore I hate the fans of the 2003 cartoon.
 !#if !adguard
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment:has-text(/Te{2}n\s\T\itan/i):not(:has-text(/s\ixte{2}n/i))
@@ -809,7 +721,7 @@ twitch.tv#?#.vod-message,.chat-line__message:has-text(/Te{2}n\s\T\itans/i)
 !#endif
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net#?#.thumb:has(img[title*=teen_titans]:not([title*="go "],[title*=go_]))
 
-! Anti-'Cartoon hipsters', unless listed in other categories on this list
+! 🇺🇸 Anti-'Cartoon hipsters', unless listed in other categories on this list
 microsoft.com#?#.f-size-medium.m-content-placement-item:has-text(Animation domination)
 kisscartoon.*##.related_list.full.series_links
 kisscartoon.*##.mb15
@@ -818,7 +730,7 @@ graphtreon.com##div.hotCreators-box.col-md-4
 artstation.com#?#.gallery-grid-item,.project:has-text(Barkhat Gay Traveler)
 !#endif
 
-! Anti-weeb
+! 🇯🇵 Anti-weeb
 osu.ppy.sh#?#.beatmapsets__item:has-text(ソードアート・オンライン)
 osu.ppy.sh#?#.beatmapsets__item:has-text(Literature Club)
 ##a[href="/memes/subcultures/doki-doki-literature-club"]
@@ -830,7 +742,7 @@ pixiv.net#?#section:has-text(Popular tags)
 pixiv.net#?#section:has-text(Ongoing contests)
 pixiv.net#?#section:has-text(Contest results)
 
-! Trading Card Game Remover for Steam
+! 🇺🇸 Trading Card Game Remover for Steam
 store.steampowered.com##a[data-ds-tagids*="1666"]:not([href*=Ticket_to_Ride], [href*=Durak], [href*=UNO], [href*=Tabletop])
 
 !#if false
@@ -841,17 +753,17 @@ adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href$=-ol i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*=-ols- i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se,theguardian.com,bbc.*##a[href*=beijing i]
-adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se,theguardian.com,bbc.*##a[href*=olympi i]
+nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se,theguardian.com,bbc.*##a[href*=olympi i]
 !!!adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se,theguardian.com,bbc.*##a[href*=hockey i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se,theguardian.com,bbc.*##a[href*=-ski- i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se,theguardian.com,bbc.*##a[href*=ioc i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se,theguardian.com,bbc.*##a[href*=paralympi i]
-adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se##a[href*=medalje i]
+nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se##a[href*=medalje i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,op.se##a[href*=curling i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*=langren i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*=bronse i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*=skihopp i]
-adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*=discovery i]
+nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*=discovery i]
 adressa.no,nidaros.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*="/ol/" i]
 dr.dk##.dre-article-teaser:has(a[href*="/vinter-pl/"])
 /winter-games-2022-
@@ -860,7 +772,7 @@ dr.dk##.dre-article-teaser:has(a[href*="/vinter-pl/"])
 !#endif
 
 !#if !adguard
-! Bad SiİvaGunner stuff
+! 🇺🇸 Bad SiİvaGunner stuff
 www.youtube.com#?##dismissable,[lockup],#dismissible > .ytd-grid-video-renderer:has-text(/\s\(JP\sVers\ion\)\s-\s/)
 www.youtube.com#?##dismissable,[lockup],#dismissible > .ytd-grid-video-renderer:has-text( - Deltarune)
 www.youtube.com#?##dismissable,[lockup],#dismissible > .ytd-grid-video-renderer:has-text( - Undertale)
@@ -877,21 +789,21 @@ www.youtube.com#?##dismissable,[lockup],#dismissible > .ytd-grid-video-renderer:
 www.youtube.com#?#[lockup]:has(a#video-title:has-text(/#shorts$/))
 www.youtube.com#?#[lockup]:has-text( Berry Best )
 www.youtube.com#?#[lockup]:has-text(Sing Along Cartoons )
-www.youtube.com#?#[lockup]:has-text(/ 🍓 \|? ?Best of /)
+www.youtube.com#?#[lockup]:has-text(/\s🍓 \|? ?Best of /)
 www.youtube.com#?#[lockup]:has-text(Sing a long )
 www.youtube.com#?#[lockup]:has-text(Berrysitting)
 !#endif
 
 ! Fake episode tracking site that is just one big ad for Disney+
-||simkl.com^$doc
+||simkl.com^$doc,domain=~fake-movie-tracker-that-is-just-a-disney-plus-undercover-ad.*
 google.*##.g:has(a[href*="simkl.com"])
 
-! Guess I can extend my adblocking to IPTV too or something. I wasn't entirely awake-type there when I wrote this.
-twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(/mer{2}\y|jul|chr\ist|kr\istus|x\mas|Pre\m\ier League|Ugl[еe]huset|Netfl\ix\s-\sse|snø|(^|\s)al\iens|nøt{2}|n\is{2}e|t\inka|hol\ida\y|housew\ives|Blue\y|palvelus|gud|anda[kg]t|galtung|jesus|shofar|(sprek|g\ym).*sof\ia|U\E\FA Cha\mp\ion|Manchester (Un\ited|C\ity)|Arsenal|Burnle\y|V\i (bare|baby) bjørn|powerpuf{2}|event\yrt\id|Mr\.? Bean|Fulha\m|Brentford|U\F\O|trädgård|t\ivol\i|Kardash\ian|J\ingle|heks|w\itch|b\ibel|k\irke|Donald Duck|Kal{2}e Anka|Anders And|All that re\ma\ins|hø[yjg]t\id|^You\Tube$|^TV ?2 Play$|Sva\mpebob|Trond Al\i|Aston V\il{2}a|Greetings| Halls|Bert\il|We\ihnacht|beb\is|joulu|ankka|claus|fra alle os|grimm og |kvelden før|Love Actually|Holly|Grinch|evangel\i|baby|aang| korra|salme|alf prøysen|sanc?ta|Radio ?3[,.]?16|Shrek.*(Lykkelig|Forever)|ny(tt)?år|abu dhab\i|OL .*(Beiji|2022)|uudenvuod|Sunderland|Rally:? Dakar|Hailey\'?s list|P\imple Popper|Thomas (och|og|and|&) |In ?Touch ?Minist|West\sHam\s|\sp7\s|o(d|đ){2}asat|Nytt på Nytt|Fantus|Gravid|Unga Mammor|Kevin Can Wait|storasyster|fjert|promp/i))
+! 🇳🇴 Guess I can extend my adblocking to IPTV too or something. I wasn't entirely awake-type there when I wrote this.
+twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(/mer{2}\y|jul|chr\ist|kr\istus|x\mas|Pre\m\ier\sLeague|Ugl[еe]huset|Netfl\ix\s-\sse|snø|(^|\s)al\iens|nøt{2}|n\is{2}e|t\inka|hol\ida\y|housew\ives|Blue\y|palvelus|gud|anda[kg]t|galtung|jesus|shofar|(sprek|g\ym).*sof\ia|U\E\FA\sCha\mp\ion|Manchester\s(Un\ited|C\ity)|Arsenal|Burnle\y|V\i\s(bare|baby)\sbjørn|powerpuf{2}|event\yrt\id|Mr\.?\sBean|Fulha\m|Brentford|U\F\O|trädgård|t\ivol\i|Kardash\ian|J\ingle|heks|w\itch|b\ibel|k\irke|Donald\sDuck|Kal{2}e\sAnka|Anders\sAnd|All\sthat\sre\ma\ins|hø[y\jg]t\id|^You\Tube$|^TV\s?2\sPlay$|Sva\mpebob|Trond\sAl\i|Aston\sV\il{2}a|Greet\ings|\sHalls|Bert\il|We\ihnacht|beb\is|joulu|ankka|claus|fra\salle\sos|gr\i\m\m\sog\s|kvelden\sfør|Love\sActuall\y|Holl\y|Gr\inch|evangel\i|bab\y|aang|\skorra|sal\me|alf\sprøysen|sanc?ta|Rad\io\s?3[,.]?16|Shrek.*(L\ykkel\ig|Forever)|ny(tt)?år|abu\sdhab\i|OL\s.*(Be\i\j\i|2022)|uudenvuod|Sunderland|Rally:?\sDakar|Ha\ile\y\'?s\sl\ist|P\i\mple\sPopper|Tho\mas\s(och|og|and|&)\s|In\s?\Touch\s?\M\in\ist|West\sHa\m\s|\sp7\s|o(d|đ){2}asat|N\ytt\spå\sN\ytt|Fantus|Grav\id|Unga\s\Ma\m\mor|Kev\in\sCan\sWa\it|storas\yster|f\jert|pro\mp|saud|jedda/i))
 twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(ÆSJ))
 
-! Shows of great cultural significance, shows that are scarcely aired, or simply shows that are good.
-twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(/Efter nio|Space Nova|Flyhavarikommisjonen|Bodø[/-]?Glimt|Molde|Elinn?or undrar så|Skattsökarna|ePrix|Avisrunden|Tara Duncan|Den bitte lille ridder|Sportsday|Kiff|Alice i Eventyrbakeri|Doktor McStuffins|flugt|flukt|K[yi]rgy[zs]|Rugby|Six Nations|Zouk|Muhamm[ea]d Ali|Bayala|Disneydags|pyttelilla riddar|Regnbågsstad|Fix (&|och|og) Trix|DDR|Domus|Grønland|Dokument utifrån|Bitz (&|och|og) Bob|Trans World Sport|Cricket|Kolstad|Wallykazam|Brennpunkt|Droners|Penn Zero|Gurken (&|og|och) N[øö]tt|(Danny|Randy) Cunningham|Family Guy|Corn (&|og|och) Peg|To på rømmen|Trassel|To på flugt|Minneapolis|Big Hero 6|[øö]stblo[ck]|Portland/i)):style(background-color: #006600 !important)
+! 🇳🇴 Shows of great cultural significance, shows that are scarcely aired, or simply shows that are good.
+twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(/Efter\sn\io|Space\sNova|Fl\yhavar\iko\m\m\is\jonen|Bodø[/-]?Gl\i\mt|Molde|El\inn?or\sundrar\sså|Skattsökarna|ePr\ix|Av\isrunden|Tara\sDuncan|Den\sb\itte\sl\ille\sr\idder|Sportsda\y|K\iff|Al\ice\s\i\s\Event\yrbaker\i|Doktor\s\McStuff\ins|flugt|flukt|K[yi]rgy[zs]|Rugb\y|S\ix\sNat\ions|Zouk|Muha\mm[ea]d\sAl\i|Ba\yala|D\isne\ydags|p\yttel\illa\sr\iddar|Regnbågsstad|F\ix\s(&|och|og)\s\Tr\ix|DDR|Do\mus|Grønland|Doku\ment\sut\ifrån|B\itz\s(&|och|og)\sBob|Trans\sWorld\sSport|Cr\icket|Kolstad|Wall\ykaza\m|Brennpunkt|Droners|Penn\sZero|Gurken\s(&|og|och)\sN[øö]tt|(Dann\y|Randy)\sCunn\ingha\m|Fa\m\il\y\sGu\y|Corn\s(&|og|och)\sPeg|To\spå\srøm\men|Trassel|To\spå\sflugt|M\inneapol\is|B\ig\sHero\s6|[øö]stblo[ck]|Portland/i)):style(background-color: #006600 !important)
 
 ! There's no reason to watch Formula 1 after Viasat's bootlicking of Premier League fanboys
 adressa.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*=formel-1 i]
@@ -972,13 +884,13 @@ adressa.no,nidaros.no,nrk.no,tv2.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet
 ! Isekai
 crunchyroll.com#?#div:is([class^=carousel-scroller__card--],[class^=single-show-card--],[class^=release-episode-card-base--],.browse-card):has-text(/Su\m\moned|Su\m\mons|Re\incarnat|Transported|Reborn.*(World|Land)|paral{2}el\sworld|\sanother\sworld\s|next\sl\ife\s|\iseka\i|Tan\ya\sthe\s\Ev\il/i)
 ! Isekai-style JRPG
-crunchyroll.com#?#div:is([class^=carousel-scroller__card--],[class^=single-show-card--],[class^=release-episode-card-base--],.browse-card):has-text(/[SABC](\s|-)rank|(VR| )M{2}\O|Sword Art \Onl\ine| soc\ial ga\me |table-?top| RPG |Neptun\ia/i)
+crunchyroll.com#?#div:is([class^=carousel-scroller__card--],[class^=single-show-card--],[class^=release-episode-card-base--],.browse-card):has-text(/[SABC](\s|-)rank|(VR|\s)M{2}\O|Sword\sArt\s\Onl\ine|\ssoc\ial\sga\me\s|table-?top|\sRPG\s|Neptun\ia/i)
 ! Misc. weebery
 crunchyroll.com#?#div:is([class^=carousel-scroller__card--],[class^=single-show-card--],[class^=release-episode-card-base--],.browse-card):has-text(/\s\Ma\ids?\s|Musu\me|\sbeaut\iful\sg\irls\s|KanCol{2}e|Str\ike\sW\itches|Azur\sLane/i)
 
-! ——— "Log in to search." This is why no one are taking that game seriously anymore. ———
-osu.ppy.sh##.beatmapsets__item:has-text(/CV:|Boku | [wg]a\s|\sn[aio]\s/)
-osu.ppy.sh##.beatmapsets__item:has-text(/yuu?sha|monogatari|TV Size|Minami|Yamamoto|Sumire|Yuka|Re:|Loona|murakawa|Hou?sho|Junpaku|jitsu|jutsu|shou?jo|takehi|bokura|itsuka|inori|miminari|masayo|yuu?ki|arigato|nakamura|sakura[a-hj-z0-9★☆:]|shou?nen|tsuku|atakushi|shimaru|natsuiro|yuiko|musubime|otome|aoharu|konoma|kanzen|Hadashi|loli|idol|hololive|natori|kimii?ro|kagami|hakushi/i)
+! ——— 🇯🇵 "Log in to search." This is why no one are taking that game seriously anymore. ———
+osu.ppy.sh##.beatmapsets__item:has-text(/CV:|Boku | [wg]a\s|\sn[a\io]\s/)
+osu.ppy.sh##.beatmapsets__item:has-text(/yuu?sha|monogatar\i|TV\sS\ize|M\ina\m\i|Ya\ma\moto|Su\m\ire|Yuka|Re:|Loona|murakawa|Hou?sho|Junpaku|j\itsu|jutsu|shou?\jo|takeh\i|bokura|itsuka|inor\i|m\i\m\inar\i|masa\yo|yuu?k\i|ar\igato|naka\mura|sakura[a-h\j-z0-9★☆:]|shou?nen|tsuku|atakush\i|sh\i\maru|natsu\iro|yu\iko|musub\i\me|oto\me|aoharu|kono\ma|kanzen|Hadash\i|lol\i|idol|holol\ive|nator\i|k\i\m\ii?ro|kaga\m\i|hakushi/i)
 
 ! ———————————————————————————————————————————————————————————————————————————————————————————————
 
@@ -1006,7 +918,7 @@ www.tv2.no##a[href*=farmen i]
 tv2.no##.post:has-text(/F\os\En|re\indr\ift|\mar\ie\shæ\Tta/i)
 ekstrabladet.dk##a[href*="/opinionen/pernillevermund/"]
 adressa.no##a[href^="https://trd.by/underholdning/i/"]
-adressa.no#?#.Teaser.news:has-text(Fosen):not(:has-text(/Brekstad|Botngård|hurtigbåt|Bjugn/i))
+adressa.no#?#.Teaser.news:has-text(Fosen):not(:has-text(/Brekstad|Botngård|hurt\igbåt|B\jugn|Vanv\ikan|Ørland/i))
 theguardian.com#?#li.fc-slice__item:has-text(Simon Jenkins)
 adressa.no,nrk.no,tv2.no,dk,vg.no,dagbladet.no,theguardian.com,bbc.com,sermitsiaq.ag##a[href*=vingegaard i]
 adressa.no,nrk.no,vg.no,dagbladet.no,tv2.no,nidaros.no##a[href*=arkitektoppror i]
@@ -1016,9 +928,12 @@ adressa.no,nrk.no,vg.no,dagbladet.no,tv2.no,nidaros.no##a[href*=arkitekturopprr 
 adressa.no,nrk.no,vg.no,dagbladet.no,tv2.no,nidaros.no,nettavisen.no,abcnyheter.no##a[href*=haetta i]
 adressa.no,nrk.no,vg.no,dagbladet.no,tv2.no,nidaros.no,nettavisen.no,abcnyheter.no##a[href*=rein i][href*=same i]
 nrk.no,vg.no,dagbladet.no,tv2.no,nidaros.no,nettavisen.no,abcnyheter.no##a[href*=-mekle- i]:not([href*=tariff i])
-nrk.no,vg.no,dagbladet.no,tv2.no,nidaros.no,nettavisen.no,abcnyheter.no##a[href*=sapmi i]
+nrk.no,vg.no,dagbladet.no,tv2.no,nidaros.no,nettavisen.no,abcnyheter.no,~radio.nrk.no##a[href*=sapmi i]
 nrk.no,vg.no,dagbladet.no,tv2.no,nidaros.no,nettavisen.no,abcnyheter.no##a[href*=samisk i]
 nrk.no,vg.no,dagbladet.no,tv2.no,nidaros.no,nettavisen.no,abcnyheter.no##a[href*=samene i]
+no,dk##a[href*=populaer i][href*=tiktok i]
+no,dk##a[href*=populr i][href*=tiktok i]
+no,dk,theguardian.com,bbc.*##a[href*=popular i][href*=tiktok i]
 
 ! Depressing winter stuff
 adressa.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,tv2.no,sermitsiaq.ag##a[href*=-jule i]
@@ -1063,7 +978,7 @@ twe.no##div[data-id^=home-asset-tile-]:has(img[alt*=christmas i])
 ||wingamestore.com^$document
 ||offgamers.com^$document
 
-! Anti-'AliExpress'
+! 🇨🇳 Anti-'AliExpress'
 www.google.*##span[jsslot] div[data-tbnid]:has(a[href*=aliexpress])
 www.google.*##span[jsslot] div[data-tbnid]:has(a[href*="alibaba.com"])
 
@@ -1160,10 +1075,12 @@ github.com#?#.js-issue-row:has(a[href*="/AdguardFilters/"]:has-text(wikipedia.or
 github.com#?#.js-issue-row:has(a[href*="/AdguardFilters/"]:has-text(foxnews))
 github.com#?#.js-issue-row:has(a[href*="/AdguardFilters/"]:has-text(foxbusiness))
 github.com#?#.js-issue-row:has(a[href*="/AdguardFilters/"]:has-text(github.com))
+github.com#?#.js-issue-row:has(a[href*="/AdguardFilters/"]:has-text(d3ward))
 github.com#?#.js-issue-row:has(a[href*="/easylist/"]:has-text(/co{2}k\ie/i))
 github.com#?#.js-issue-row:has(a[href*="/easylist/"]:has-text(/an{2}o\yance/i))
 github.com#?#.js-issue-row:has(a[href*="/easylist/"]:has-text(Privacy))
 github.com#?#.js-issue-row:has(a[href*="/easylist/"]:has-text(/track/i))
+github.com#?#.js-issue-row:has(a[href*="/easylist/"]:has-text(d3ward))
 
 ! Disney+ was a mistake
 disneyplus.com#?#div[class$=-asset]:has([alt*=loki i])
@@ -1228,7 +1145,7 @@ disneyplus.com#?#div[class$=-asset]:has([alt*=Snø i]:not([alt*=hvit i]))
 disneyplus.com#?#div[class$=-asset]:has([alt*=Snow i]:not([alt*=white i]))
 disneyplus.com#?#div[class$=-asset]:has(a[data-gv2elementvalue^=d700e4])
 
-! Script blocking for PRC sites
+! 🇨🇳 Script blocking for PRC sites
 */log/$domain=bilibili.com
 ||cm.bilibili.com^$all
 /bili-collect.js$all
@@ -2787,5 +2704,3 @@ google.*##.g:has(a[href*="theherooftomorrow.blogspot.com"])
 google.*##.g:has(a[href*="terribletvshows.miraheze.org"])
 google.*##.g:has(a[href*="pcgamingwiki.com"])
 google.*##.g:has(a[href*="vice.com"])
-
-!#endif

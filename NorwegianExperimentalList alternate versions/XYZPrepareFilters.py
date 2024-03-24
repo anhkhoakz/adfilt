@@ -2239,19 +2239,19 @@ def prepare_xul(lines) -> str:
         )
 
         line = re.sub(
-           r":not\((([a-zA-Z0-9.*^~=-]|\[|\]|\"){1,}), (([a-zA-Z0-9.*^~=-]|\[|\]|\"){1,})\)", 
+           r":not\((([a-zA-Z0-9.*^~=:-]|\[|\]|\"){1,}), ?(([a-zA-Z0-9.*^~=:-]|\[|\]|\"){1,})\)", 
            r":not(\1):not(\3)", 
            line
         )
 
         line = re.sub(
-           r":not\((([a-zA-Z0-9.*^~=-]|\[|\]|\"){1,}), (([a-zA-Z0-9.*^~=-]|\[|\]|\"){1,}), (([a-zA-Z0-9.*^~=-]|\[|\]|\"){1,})\)", 
+           r":not\((([a-zA-Z0-9.*^~=:-]|\[|\]|\"){1,}), ?(([a-zA-Z0-9.*^~=:-]|\[|\]|\"){1,}), ?(([a-zA-Z0-9.*^~=:-]|\[|\]|\"){1,})\)", 
            r":not(\1):not(\3):not(\5)", 
            line
         )
 
         line = re.sub(
-           r":not\((([a-zA-Z0-9.*^~=-]|\[|\]|\"){1,}), (([a-zA-Z0-9.*^~=-]|\[|\]|\"){1,}), (([a-zA-Z0-9.*^~=-]|\[|\]|\"){1,}), (([a-zA-Z0-9.*^~=-]|\[|\]|\"){1,})\)", 
+           r":not\((([a-zA-Z0-9.*^~=:-]|\[|\]|\"){1,}), ?(([a-zA-Z0-9.*^~=:-]|\[|\]|\"){1,}), ?(([a-zA-Z0-9.*^~=:-]|\[|\]|\"){1,}), ?(([a-zA-Z0-9.*^~=:-]|\[|\]|\"){1,})\)", 
            r":not(\1):not(\3):not(\5):not(\7)", 
            line
         )
@@ -3269,7 +3269,7 @@ UNSUPPORTED_DNSMASQ = ['*', '# ']
 UNSUPPORTED_DOMAINSALLOWLIST = ['randomplaceholdertext']
 
 OUTPUT = 'xyzzyxdomains.txt'
-OUTPUT_HOSTS = 'AdawayHosts'
+OUTPUT_HOSTS = 'NordicHosts.txt'
 OUTPUT_LS = 'LittleSnitchNorwegianList.lsrules'
 OUTPUT_DNSMASQ = 'NordicFiltersDnsmasq.conf'
 OUTPUT_HOSTSDENY = 'NordicFiltersHostsDeny.deny'
@@ -3993,6 +3993,12 @@ def prepare_agh(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r"^(# For more information.*)", 
+           r"\1\n# If you wish to remove cookie banners from Nordic websites, check out https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList-Notifications.txt", 
+           line
+        )
+
         text += line + '\n'
 
     return text
@@ -4633,7 +4639,7 @@ def prepare_ag(lines) -> str:
 
         line = re.sub(
            r"\[Adblock Plus 3\..*", 
-           r"[AdGuard]", 
+           r"", 
            line
         )
 
