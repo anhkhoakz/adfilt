@@ -1,8 +1,8 @@
 [Adblock Plus 3.13]
-! Title: 🏙 Anti-OWD List (WILL BE MOVED TO https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/AntiOWDList.txt CIRCA 8th of APRIL 2024)
-! Version: 24March2024v1-Alpha
+! Title: 🏙 Anti-OWD List
+! Version: 24March2024v1-Beta
 ! Expires: 5 days
-! Description: OWH is yet another magic academy tween media thingie like the thousands that are in bookstores. This list will help you stick to more inventive media instead.
+! Description: OWD is yet another Magic Academy tween media like the thousands that show up in bookstores every time I go to them, and least 20 other cartoons and 30 live-action shows in 2012-24. This list will help you stick to more inventive media instead.
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 
 !#if !env_mv3
