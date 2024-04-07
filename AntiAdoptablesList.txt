@@ -6,6 +6,8 @@
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 
 !#if !env_mv3
+!#if !ext_ubol
+!#if !adguard_ext_android_cb
 ! ——— Weasyl ———
 weasyl.com##a[href*=adopt]
 weasyl.com##a[href*=auction]
@@ -88,16 +90,6 @@ pixiv.net##.works-item:has(img[alt*=ADOPTED])
 !#endif
 
 ! ——— Nitter ———
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has-text(/Adoptable[s.!,;]/i)
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has-text(/ adopts?[ .!,;]/i):not(:has-text(/ch\ild|k\id|resolut\ion/i))
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has-text(/son\icadopts/i)
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has-text(opensea.)
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has-text(foundation.app)
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has-text(#NFT)
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has-text(/Crypto_?\Fa\ir\ies/i)
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has-text($ETH)
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has-text(/N\F\T\sArt\ist/i)
-nitter.net,nitter.unixfox.eu,nitter.mint.lgbt,nitter.esmailelbob.xyz,nitter.cz,nitter.d420.de,nitter.x86-64-unknown-linux-gnu.zip,nitter.woodland.cafe,nitter.dafriser.be,nitter.catsarch.com,nitter.perennialte.ch,nitter.salastil.com,nitter.uni-sonia.com,n.opnxng.com,nitter.ktachibana.party#?#.timeline-item:has(.fullname:has-text(/\.eth$/i))
 
 ! ——— Inkbunny ———
 inkbunny.net##.widget_thumbnailLargeCompleteFromSubmission:has(img[title*=adopt])
@@ -160,3 +152,5 @@ deviantart.com#?#div[style^="width:"][style*="display:"]:has(a[href*="/art/"]):h
 
 ! ——— Twitter ———
 ! Twitter support was removed due to Musk being a white supremacist; see https://www.theguardian.com/technology/2023/sep/18/elon-musk-accuses-george-soros-foundation-of-wanting-to-destroy-western-civilisation
+!#endif
+!#endif

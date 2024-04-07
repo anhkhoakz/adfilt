@@ -7,6 +7,8 @@
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 
 !#if !env_mv3
+!#if !ext_ubol
+!#if !adguard_ext_android_cb
 ! 🌍 International
 eetgroup.com
 
@@ -44,7 +46,6 @@ webshop.braathe.no
 webshop.cegal.com
 webshop.elektroskandia.no
 webshop.eltele.no
-webshop.funn.no
 webshop.garnesdata.no
 webshop.intility.no
 webshop.itsystemer.no
@@ -127,4 +128,6 @@ eshop.cebeo.be
 shop.comby.gl
 
 ! Countries considered problemless at the time of writing: Austria, Estonia, Iceland
+!#endif
+!#endif
 !#endif

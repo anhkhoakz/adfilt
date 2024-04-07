@@ -1,6 +1,6 @@
 [Adblock Plus 3.18]
 ! Title: 👸 Anti-FіМ List
-! Version: 28March2024v1
+! Version: 31March2024v1
 ! Expires: 5 days
 ! Description: Do you feel that Friendship is Magic overstayed its welcome? Here's a list that'll let you keep more of a distance to it.
 ! Motivation: You probably think that I'm one of those "Men shouldn't watch My Little Pony" fools? Nope, on the contrary. Being a fulltime viewer of actual preschool cartoons (read: Nella the Princess Knight, etc.), and have therefore seen just how staggeringly irrational that bronies can act towards them, I consider bronies to be fakers who preach hatred, destruction, and clan mentality, and I strongly regret that I was once one of them, many years ago.
@@ -8,6 +8,8 @@
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 
 !#if !env_mv3
+!#if !ext_ubol
+!#if !adguard_ext_android_cb
 ! Noticeable brony-only sites
 !! Better entries for uBlock Origin and AdGuard. A new method was discovered in 2023 to restore the old warning explanations.
 ||horse-news.org^$document,domain=~brony-or-mlp-g4-site.*
@@ -4176,8 +4178,8 @@ furrynetwork.com#?#.media-grid__item:has-text(/Flut{2}erdash/i)
 ||cloudfront.net/*/raycybertech/$image,domain=furrynetwork.com
 ||cloudfront.net/*/renegade-157/$image,domain=furrynetwork.com
 
+!#if false
 ! Nitter (GUI for Twitter)
-!#if !adguard
 /^nitter\..*$/,n.opnxng.com#?#.timeline-item:has-text(/(\(|\s)EqG(\)|\s)/)
 /^nitter\..*$/,n.opnxng.com#?#.timeline-item:has-text(/(\(|\s)Pon\if\ied/i)
 /^nitter\..*$/,n.opnxng.com#?#.timeline-item:has-text(/Adag\io\sDaz{2}le/i)
@@ -5060,4 +5062,6 @@ v.qq.com#?#.list_item:has-text(量的天角兽公主)
 v.qq.com#?#.list_item:has-text(黑暗之剑和黎明之剑)
 v.qq.com#?#.list_item:has-text(和谐之元的)
 v.qq.com#?#.list_item:has-text(小马跟恶魔)
+!#endif
+!#endif
 !#endif

@@ -92,7 +92,6 @@
 
 ! Domains that cause Error -105 on my LG 43UH603V TV if they're blocked (Not in any known filterlists)
 @@||connected-devices.viaplay.tv^
-@@||tv.deezer.com^
 @@||lgrecommends.lgappstv.com^
 ! Disney+
 @@||cd-dmgz.bamgrid.com^
@@ -100,7 +99,7 @@
 ! Good sites used to scan domains for malware or ads, and which should/must be allowlisted to avoid having entries in various filterlists interfere with their scanning (Not in any known domains-based filterlists)
 @@||siteadvisor.com^
 @@||securitytrails.com^
-@@||securitytrails.com^$elemhide
+!!!@@||securitytrails.com^$elemhide (To make it possible to remove rows that start with "cpanel.", "webmail.", etc.)
 @@||www.joesandbox.com^
 @@||virustotal.com^
 @@||fortiguard.com^
@@ -280,6 +279,5 @@ z$badfilter
 @@||stanev.org/abp^
 @@||pgl.yoyo.org/adservers/serverlist.
 @@||someonewhocares.org/hosts/
-@@||ublockorigin.github.io^
 @@||ublockorigin.pages.dev^
 @@||fanboy.co.nz/*.txt^

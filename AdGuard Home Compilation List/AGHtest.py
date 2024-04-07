@@ -55,7 +55,7 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r".*\^[*$,][ac-hj-z?].*", 
+           r"^.*\^[*$,][ac-hj-z?].*$", 
            "", 
            line
         )
@@ -67,13 +67,13 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^[:@][a-z0-9?!].*", 
+           r"^[:@][a-z0-9?!].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^@?@?\|.*[/_#,].*", 
+           r"^@?@?\|.*[/_#,].*$", 
            r"", 
            line
         )
@@ -85,31 +85,31 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r".*\^\*.*", 
+           r"^.*\^\*.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\*\^[a-z0-9?].*", 
+           r"^.*\*\^[a-z0-9?].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\^&.*", 
+           r"^.*\^&.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\|.*/.*", 
+           r"^.*\|.*/.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\*[&?@].*", 
+           r"^.*\*[&?@].*$", 
            r"", 
            line
         )
@@ -121,13 +121,13 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^([&+=?^_%,~#*]|@@/|\\.|;[a-z0-9]).*", 
+           r"^([&+=?^_%,~#*]|@@/|\\.|;[a-z0-9]).*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! (AG_|Checksum:|Ref:|http|\||\[|#|!).*",
+           r"^! (AG_|Checksum:|Ref:|http|\||\[|#|!).*$",
            r"", 
            line
         )
@@ -157,25 +157,25 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^://.*/.*", 
+           r"^://.*/.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/.*[a-z0-9]\\?/[a-z0-9\(].*", 
+           r"^/.*[a-z0-9]\\?/[a-z0-9\(].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/.*[a-z]\\/.*", 
+           r"^/.*[a-z]\\/.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/.*[a-z]\/.*", 
+           r"^/.*[a-z]\/.*$", 
            r"", 
            line
         )
@@ -187,19 +187,19 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^[a-z0-9@|].*\?.*", 
+           r"^[a-z0-9@|].*\?.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\(update frequency\)", 
+           r"^.*\(update frequency\)", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! 20(1|2).*", 
+           r"^! 20(1|2).*$", 
            r"", 
            line
         )
@@ -235,25 +235,25 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^[@.].*[a-z0-9*]/.*", 
+           r"^[@.].*[a-z0-9*]/.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*[$,]jsinject$", 
+           r"^.*[$,]jsinject$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".* - .*", 
+           r"^.* - .*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^![a-z0-9].*#.*", 
+           r"^![a-z0-9].*#.*$", 
            r"", 
            line
         )
@@ -265,37 +265,37 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^! ! \+.*", 
+           r"^! ! \+.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^\|.*:[0-9].*", 
+           r"^\|.*:[0-9].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^[a-zA-Z0-9.-].*[a-z0-9.-][/?_+=&][a-zA-Z0-9.$*-].*", 
+           r"^[a-zA-Z0-9.-].*[a-z0-9.-][/?_+=&][a-zA-Z0-9.$*-].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/.*[_=/;~@%#+,!].*", 
+           r"^/.*[_=/;~@%#+,!].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^[@|:/.-].*[%&?_=].*", 
+           r"^[@|:/.-].*[%&?_=].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^[|:/.-].*:.*", 
+           r"^[|:/.-].*:.*$", 
            r"", 
            line
         )
@@ -313,13 +313,13 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^\..*=.*", 
+           r"^\..*=.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^[a-z0-9./|-].*\^=.*", 
+           r"^[a-z0-9./|-].*\^=.*$", 
            r"", 
            line
         )
@@ -331,7 +331,7 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r".*\.,badfilter$", 
+           r"^.*\.,badfilter$", 
            r"", 
            line
         )
@@ -367,43 +367,43 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^! E[nN][dD].*", 
+           r"^! E[nN][dD].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! Expires: [0-9] .*", 
+           r"^! Expires: [0-9] .*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! (Good|Bad): .*", 
+           r"^! (Good|Bad): .*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".* end ⬆️$", 
+           r"^.* end ⬆️$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! This section contains the list of .*", 
+           r"^! This section contains the list of .*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! Note, .*", 
+           r"^! Note, .*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*github\.com/NanoMeow.*", 
+           r"^.*github\.com/NanoMeow.*$", 
            r"", 
            line
         )
@@ -451,13 +451,13 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^! \*\*\* .*hide.*", 
+           r"^! \*\*\* .*hide.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! Smart ?JSON.*", 
+           r"^! Smart ?JSON.*$", 
            r"", 
            line
         )
@@ -469,7 +469,7 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^! \*\*\* easylistspanish:easylistspanish(_adult/adult_thirdparty|/easylistspanish_allowlist_|_adult/adult_allowlist).*", 
+           r"^! \*\*\* easylistspanish:easylistspanish(_adult/adult_thirdparty|/easylistspanish_allowlist_|_adult/adult_allowlist).*$", 
            r"", 
            line
         )
@@ -481,19 +481,19 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^! \*\*\* easylist:easylist_adult/adult_allowlist.*", 
+           r"^! \*\*\* easylist:easylist_adult/adult_allowlist.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! \*\*\* easylistgermany:easylistgermany/(easylistgermany_allowlist|easylistgermany_specific_block_popup\.).*", 
+           r"^! \*\*\* easylistgermany:easylistgermany/(easylistgermany_allowlist|easylistgermany_specific_block_popup\.).*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"! \*\*\* antiadblockfilters.*(czech|dutch|finnish|hebrew|indonesian|latvian|romanian|slovak).*", 
+           r"! \*\*\* antiadblockfilters.*(czech|dutch|finnish|hebrew|indonesian|latvian|romanian|slovak).*$", 
            r"", 
            line
         )
@@ -517,25 +517,25 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r".*\.html?(\^|\|)$", 
+           r"^.*\.html?(\^|\|)$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^!.* property.*", 
+           r"^!.* property.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^!.*([Éé]lément|CSS|General hid|JS).*", 
+           r"^!.*([Éé]lément|CSS|General hid|JS).*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*#\$\?#.*", 
+           r"^.*#\$\?#.*$", 
            r"", 
            line
         )
@@ -548,13 +548,13 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^\|.*[a-zA-Z0-9]\|[|a-zA-Z0-9].*", 
+           r"^\|.*[a-zA-Z0-9]\|[|a-zA-Z0-9].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*Reek's Anti-Adblock Killer.*", 
+           r"^.*Reek's Anti-Adblock Killer.*$", 
            r"", 
            line
         )
@@ -585,19 +585,19 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r".*\$\[.*", 
+           r"^.*\$\[.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^[a-zA-Z0-9:/|].*\$\$.*", 
+           r"^[a-zA-Z0-9:/|].*\$\$.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^[0-9].*[: ].*", 
+           r"^[0-9].*[: ].*$", 
            r"", 
            line
         )
@@ -633,7 +633,7 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^![!#].*", 
+           r"^![!#].*$", 
            "", 
            line
         )
@@ -688,19 +688,19 @@ def prepare_ip(lines) -> str:
         )
 
         line = re.sub(
-           r".*\^[*$,].*", 
+           r"^.*\^[*$,].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r".*\.js$", 
+           r"^.*\.js$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^([&+-.=?^_%:*/@]|\\.).*", 
+           r"^([&+-.=?^_%:*/@]|\\.).*$", 
            "", 
            line
         )
@@ -712,25 +712,25 @@ def prepare_ip(lines) -> str:
         )
 
         line = re.sub(
-           r"^\|[a-z0-9].*", 
+           r"^\|[a-z0-9].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^;[a-z0-9].*", 
+           r"^;[a-z0-9].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^@[a-z0-9].*", 
+           r"^@[a-z0-9].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"@?@?\|\|.*[a-zа-яみ].*", 
+           r"@?@?\|\|.*[a-zа-яみ].*$", 
            r"", 
            line
         )
@@ -742,13 +742,13 @@ def prepare_ip(lines) -> str:
         )
 
         line = re.sub(
-           r"^![a-z #].*", 
+           r"^![a-z #].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^!-.*", 
+           r"^!-.*$", 
            r"", 
            line
         )
@@ -778,7 +778,7 @@ def prepare_ip(lines) -> str:
         )
 
         line = re.sub(
-           r"^@@.*[a-z].*", 
+           r"^@@.*[a-z].*$", 
            r"", 
            line
         )
@@ -790,7 +790,7 @@ def prepare_ip(lines) -> str:
         )
 
         line = re.sub(
-           r"# Version: (.*)-.*", 
+           r"# Version: (.*)-.*$", 
            r"! Version: \1-PreAlpha", 
            line
         )
@@ -814,25 +814,25 @@ def prepare_ip(lines) -> str:
         )
 
         line = re.sub(
-           r"^://.*/.*", 
+           r"^://.*/.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*104\\\.154\\\.\..*", 
+           r"^.*104\\\.154\\\.\..*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/\^[h.].*", 
+           r"^/\^[h.].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/\\.*", 
+           r"^/\\.*$", 
            r"", 
            line
         )
@@ -844,13 +844,13 @@ def prepare_ip(lines) -> str:
         )
 
         line = re.sub(
-           r"^![a-zA-Z!*].*", 
+           r"^![a-zA-Z!*].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^[A-Za-z].*", 
+           r"^[A-Za-z].*$", 
            r"", 
            line
         )
@@ -862,19 +862,19 @@ def prepare_ip(lines) -> str:
         )
 
         line = re.sub(
-           r"^#[a-z0-9.#].*", 
+           r"^#[a-z0-9.#].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r".*dmcdn\..*", 
+           r"^.*dmcdn\..*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^[a-z.#%$[].*", 
+           r"^[a-z.#%$[].*$", 
            r"", 
            line
         )
@@ -886,7 +886,7 @@ def prepare_ip(lines) -> str:
         )
 
         line = re.sub(
-           r"^[a-zA-Z0-9].*[#$|a-z].*", 
+           r"^[a-zA-Z0-9].*[#$|a-z].*$", 
            r"", 
            line
         )
@@ -1075,13 +1075,13 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r".*\^[*$,][ac-hj-z?].*", 
+           r"^.*\^[*$,][ac-hj-z?].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r".*\.js$", 
+           r"^.*\.js$", 
            "", 
            line
         )
@@ -1093,7 +1093,7 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^[&+=?^_%].*", 
+           r"^[&+=?^_%].*$", 
            "", 
            line
         )
@@ -1105,61 +1105,61 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^[0-9].*", 
+           r"^[0-9].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^!#.*", 
+           r"^!#.*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^\|[a-z0-9].*", 
+           r"^\|[a-z0-9].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^;[a-z0-9].*", 
+           r"^;[a-z0-9].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^Amasty_.*", 
+           r"^Amasty_.*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^\*.*", 
+           r"^\*.*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^\\.*", 
+           r"^\\.*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^:[a-z0-9?!].*", 
+           r"^:[a-z0-9?!].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"^@[a-z0-9].*", 
+           r"^@[a-z0-9].*$", 
            "", 
            line
         )
 
         line = re.sub(
-           r"@?@?\|\|.*/.*", 
+           r"@?@?\|\|.*/.*$", 
            r"", 
            line
         )
@@ -1177,31 +1177,31 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r".*\^\*.*", 
+           r"^.*\^\*.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\*\^[a-z0-9?].*", 
+           r"^.*\*\^[a-z0-9?].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\^&.*", 
+           r"^.*\^&.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\|.*/.*", 
+           r"^.*\|.*/.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\*[&?@].*", 
+           r"^.*\*[&?@].*$", 
            r"", 
            line
         )
@@ -1213,19 +1213,19 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^@@/.*", 
+           r"^@@/.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^[,=^?~].*", 
+           r"^[,=^?~].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! \|.*", 
+           r"^! \|.*$", 
            r"", 
            line
         )
@@ -1267,43 +1267,43 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^! http.*",
+           r"^! http.*$",
            r"", 
            line
         )
 
         line = re.sub(
-           r"^://.*/.*", 
+           r"^://.*/.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*104\\\.154\\\.\..*", 
+           r"^.*104\\\.154\\\.\..*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/.*[a-z0-9]\\?/[a-z0-9\(].*", 
+           r"^/.*[a-z0-9]\\?/[a-z0-9\(].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"\|\|.*_.*", 
+           r"\|\|.*_.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/.*[a-z]\\/.*", 
+           r"^/.*[a-z]\\/.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/.*[a-z]\/.*", 
+           r"^/.*[a-z]\/.*$", 
            r"", 
            line
         )
@@ -1315,31 +1315,31 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^[a-z0-9@|].*\?.*", 
+           r"^[a-z0-9@|].*\?.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! Checksum:.*", 
+           r"^! Checksum:.*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*\(update frequency\)", 
+           r"^.*\(update frequency\)", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! 20(1|2).*", 
+           r"^! 20(1|2).*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^! Ref:.*", 
+           r"^! Ref:.*$", 
            r"", 
            line
         )
@@ -1381,13 +1381,13 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r"^[a-z0-9.-].*[a-z0-9.-][/?_+=&][a-z0-9.$-].*", 
+           r"^[a-z0-9.-].*[a-z0-9.-][/?_+=&][a-z0-9.$-].*$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^/.*[_?=/;~@%#+,].*", 
+           r"^/.*[_?=/;~@%#+,].*$", 
            r"", 
            line
         )
@@ -1399,13 +1399,13 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r".*\.,badfilter$", 
+           r"^.*\.,badfilter$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*dmcdn\..*", 
+           r"^.*dmcdn\..*$", 
            r"", 
            line
         )
@@ -1423,13 +1423,13 @@ def prepare_agh(lines) -> str:
         )
 
         line = re.sub(
-           r".*/,stylesheet$", 
+           r"^.*/,stylesheet$", 
            r"", 
            line
         )
 
         line = re.sub(
-           r"^%.*", 
+           r"^%.*$", 
            r"", 
            line
         )
