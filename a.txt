@@ -1,6 +1,6 @@
 [Adblock Plus 3.18]
 ! Title: 🏡 a.txt (Imres filtre)
-! Version: 05April2024v2-Personal
+! Version: 13April2024v2-Personal
 ! Expires: 12 hours
 ! Description: This list, and any other lists whose version is suffixed with "-Personal", are _NOT_ intended for public use, except for 1) those who wish to authentically reproduce my list setup in issue reports, and 2) enthusiasts who want to try out pre-spin-off pre-alpha list concepts of mine.
 !#if !env_mv3
@@ -54,7 +54,7 @@
 !#endif
 
 !#if !env_chromium
-!#if adguard_windows_app
+!#if adguard_app_windows
 !#include AntiMV3List.txt
 !#endif
 !#if adguard_app_mac
@@ -112,8 +112,8 @@ deviantart.com##a[data-hook][href*="/art/"][href*="/caine-" i]
 deviantart.com##a[data-hook][href*="/art/"]:is([href*=specialist i],[href*=timmy i],[href*=brandon i]):is([href*=winx i],[href*=tecna i],[href*=bloom i],[href*=stella i],[href*=musa i],[href*=alfea i])
 deviantart.com##a[data-hook][href*="/art/"][href*=chelsea i]:is([href*=athena i],[href*=flounder i],[href*=ariel i],[href*=alle i],[href*=sebastian i])
 deviantart.com##div[class^=_]:nth-of-type(2):last-of-type a[href*="/team/journal/"]:upward(2)
-kemono.party#?#.post-card:-abp-has(a:has-text(/\sChapter\s[1-9]/i))
-kemono.party#?#.post-card:-abp-has(a:has-text(/\sCh\.\s[1-9]/))
+kemono.*#?#.post-card:-abp-has(a:has-text(/\sChapter\s[1-9]/i))
+kemono.*#?#.post-card:-abp-has(a:has-text(/\sCh\.\s[1-9]/))
 soundcloud.com#?#.badgeList__item,.g-scrollable-inner li,.systemPlaylistTrackList__item,.playableTile,.sound:has-text(/Tourna\ment/i)
 soundcloud.com#?#.badgeList__item,.g-scrollable-inner li,.systemPlaylistTrackList__item,.playableTile,.sound:has-text(/Tourney/i)
 ||fileplanet.com^$all
@@ -507,6 +507,9 @@ tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog 
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/daughter|pregnan/i):has-text(/d\isney[ -]?fa\ir\ies|ir\idessa|s\ilver\m\ist|v\id\ia|zar\ina|per\iw\inkle|p\ix\ie[ -]?hollow/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/sponge\s?bob/i):has-text(/bowl|football|sweet\sv\ictory/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/h\illenb[ue]rg/i)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/^.*#.*baby\s(mario|luigi|daisy).*note.*$/i):watch-attr(class):watch-attr(style)
+tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]:has-text(/^.*#.*baby\s(mario|luigi|daisy).*note.*$/i)
+www.tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/^.*#.*baby\s(mario|luigi|daisy).*$/i)
 steamdb.info#?#.tooltipped:has-text(PCGW)
 ||motvind.org^$all
 ||wind-watch.org^$all
@@ -573,6 +576,25 @@ epicgames.com#?#li[class^=css-]:has-text(/sol\ita\ir|mah\jong|j\igsaw|sakura/i)
 tumblr.com,~www.tumblr.com##.grid > article[class^=post-]:has-text(/princess ?luna|homestuck|mlp:? ?fim|princess of friendship|batpon|twilight ?sparkle|[ #]eqg[ #]|friendship ?is ?magic|[ #]eqg[ #]|fluttershy/i)
 ! I've struggled bafflingly long to get a kitchen knife that is comparably good to the pink knife masterpiece IKEA sold back in 2017
 tilbords.no##.product-list > .product:has-text(/ glatt | skrellekniv /i)
+! A godsdamn manhunt just because of master degree thesis? Norwegian newssites need better priorities. Deluxe.
+adressa.no,nidaros.no,nrk.no,vg.no,dagbladet.no,theguardian.com,tv2.no,nettavisen.no##a[href*=kjerkol i]
+! The fire-inducing homicidal gangsters who complain about VAR, are the exact same godsdamn gangsters who complained about miscalled penalties 10 years ago.
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=ffk- i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=hamkam i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=fkh- i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=lillestroem i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=lillestrom i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=lillestrm i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=-lsk i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=rbk i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=rosenborg i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=stroemsgodset i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=stromsgodset i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=strmsgodset i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=-s08- i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=supportergruppe i]
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=kjernen i]:is([href*=sport i],[href*=styret i],[href*=klubb i])
+adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=klanen i]:is([href*=sport i],[href*=styret i],[href*=klubb i])
 
 !if !env_mobile
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"]):has-text(/fe{2}t\ies/i)
@@ -584,6 +606,8 @@ pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*="baby cloth" i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=shrunk i][cloth i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=oot i][alt*=worship i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"][data-gtm-user-id="70223367"])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt~=tickling i])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=female i][alt*=boxing i])
 reports.adblockplus.org###reports:style(min-height: 2100px !important)
 reports.adblockplus.org##.slick-viewport:style(min-height: 2100px !important)
 !#endif
@@ -596,6 +620,8 @@ pixiv.net##.works-item:has(img[alt*=littleeinstein i])
 pixiv.net##.works-item:has(img[alt*="baby cloth" i])
 pixiv.net##.works-item:has(img[alt*=shrunk i][cloth i])
 pixiv.net##.works-item:has(img[alt*=oot i][alt*=worship i])
+pixiv.net##.works-item:has(img[alt~=tickling i])
+pixiv.net##.works-item:has(img[alt*=female i][alt*=boxing i])
 !#endif
 !#if !adguard
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment,.thing,shreddit-comment,article.w-full:has-text(/M\orb/i)
@@ -827,7 +853,7 @@ twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[styl
 twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(ÆSJ))
 
 ! 🇳🇴 Shows of great cultural significance, shows that are scarcely aired, or simply shows that are good.
-twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(/Efter\sn\io|Space\sNova|Fl\yhavar\iko\m\m\is\jonen|Bodø[/-]?Gl\i\mt|Molde|El\inn?or\sundrar\sså|Skattsökarna|ePr\ix|Av\isrunden|Tara\sDuncan|Den\sb\itte\sl\ille\sr\idder|Sportsda\y|K\iff|Al\ice\s\i\s\Event\yrbaker\i|Doktor\s\McStuff\ins|flugt|flukt|K[yi]rgy[zs]|Rugb\y|S\ix\sNat\ions|Zouk|Muha\mm[ea]d\sAl\i|Ba\yala|D\isne\ydags|p\yttel\illa\sr\iddar|Regnbågsstad|F\ix\s(&|och|og)\s\Tr\ix|DDR|Do\mus|Grønland|Doku\ment\sut\ifrån|B\itz\s(&|och|og)\sBob|Trans\sWorld\sSport|Cr\icket|Kolstad|Wall\ykaza\m|Brennpunkt|Droners|Penn\sZero|Gurken\s(&|og|och)\sN[øö]tt|(Dann\y|Randy)\sCunn\ingha\m|Fa\m\il\y\sGu\y|Corn\s(&|og|och)\sPeg|To\spå\srøm\men|Trassel|To\spå\sflugt|M\inneapol\is|B\ig\sHero\s6|[øö]stblo[ck]|Portland/i)):style(background-color: #006600 !important)
+twe.no#?#div[style^="width: "]:not([role],[data-id],[data-test-id]):has(div[style^="opacity: "]:has-text(/Efter\sn\io|Space\sNova|Fl\yhavar\iko\m\m\is\jonen|Bodø[/-]?Gl\i\mt|Molde|El\inn?or\sundrar\sså|Skattsökarna|ePr\ix|Av\isrunden|Tara\sDuncan|Den\sb\itte\sl\ille\sr\idder|Sportsda\y|K\iff|Al\ice\s\i\s\Event\yrbaker\i|Doktor\s\McStuff\ins|flugt|flukt|K[yi]rgy[zs]|Rugb\y|S\ix\sNat\ions|Zouk|Muha\mm[ea]d\sAl\i|Ba\yala|D\isne\ydags|p\yttel\illa\sr\iddar|Regnbågsstad|F\ix\s(&|och|og)\s\Tr\ix|DDR|Do\mus|Grønland|Doku\ment\sut\ifrån|B\itz\s(&|och|og)\sBob|Trans\sWorld\sSport|Cr\icket|Kolstad|Wall\ykaza\m|Brennpunkt|Droners|Penn\sZero|Gurken\s(&|og|och)\sN[øö]tt|(Dann\y|Randy)\sCunn\ingha\m|Fa\m\il\y\sGu\y|Corn\s(&|og|och)\sPeg|To\spå\srøm\men|Trassel|To\spå\sflugt|M\inneapol\is|B\ig\sHero\s6|[øö]stblo[ck]|Portland|Dox: /i)):style(background-color: #006600 !important)
 
 ! There's no reason to watch Formula 1 after Viasat's bootlicking of Premier League fanboys
 adressa.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no##a[href*=formel-1 i]
