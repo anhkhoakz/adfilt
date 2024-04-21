@@ -1,6 +1,6 @@
 [Adblock Plus 3.18]
 ! Title: 🏡 a.txt (Imres filtre)
-! Version: 13April2024v2-Personal
+! Version: 20April2024v2-Personal
 ! Expires: 12 hours
 ! Description: This list, and any other lists whose version is suffixed with "-Personal", are _NOT_ intended for public use, except for 1) those who wish to authentically reproduce my list setup in issue reports, and 2) enthusiasts who want to try out pre-spin-off pre-alpha list concepts of mine.
 !#if !env_mv3
@@ -85,6 +85,7 @@ e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=mlp][data-tags*
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=angels_with_scaly_wings])
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title~=kaa][title*=hypno])
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title~=bimbo_lips])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img:is([title~=boxing],[title*=" boxing"]):is([title*=female],[title*=girls]))
 rule34.xxx###subnavbar a[href="mailto:dmca@booru.org"]
 store.playstation.com#?#.psw-l-grid > li:has-text(/Angels\sw\ith\sScal\y\sW\ings/i)
 netflix.com##.notifications
@@ -508,8 +509,14 @@ tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog 
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/sponge\s?bob/i):has-text(/bowl|football|sweet\sv\ictory/i)
 tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/h\illenb[ue]rg/i)
 tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/^.*#.*baby\s(mario|luigi|daisy).*note.*$/i):watch-attr(class):watch-attr(style)
-tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]:has-text(/^.*#.*baby\s(mario|luigi|daisy).*note.*$/i)
+tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/^.*#.*baby\s(mario|luigi|daisy).*note.*$/i)
 www.tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/^.*#.*baby\s(mario|luigi|daisy).*$/i)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/^.*once-?ler.*note.*$/i):watch-attr(class):watch-attr(style)
+tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/^.*once-?ler.*note.*$/i)
+www.tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/^.*once-?ler.*$/i)
+tumblr.com##div[data-timeline*=notes_info] div[data-cell-id]:has-text(/^.*\shcs\s.*note.*$/i):watch-attr(class):watch-attr(style)
+tumblr.com##div:is([aria-label=Replay i],[aria-label=Like i],[aria-label=Reblog i]):has-text(/^.*\shcs\s.*note.*$/i)
+www.tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/^.*\shcs\s.*$/i)
 steamdb.info#?#.tooltipped:has-text(PCGW)
 ||motvind.org^$all
 ||wind-watch.org^$all
@@ -572,6 +579,7 @@ lostmediawiki.com##div.mw-category-group li:has(a[href*=_build_],a[href*=_builds
 epicgames.com#?#li[class^=css-]:has-text(/Card\sGa\me|Yo\m\i\s2|Faer\ia|DBG/)
 epicgames.com#?#li[class^=css-]:has-text(/tcg|card\sdefen|Yo\m\i\s2|Runeterra|ccg|Foretales|Inscr\ypt\ion|l\ix\sHeroes|Roguebook/i)
 epicgames.com#?#li[class^=css-]:has-text(/sol\ita\ir|mah\jong|j\igsaw|sakura/i)
+www.google.*##:is(.g,isv-r):has(a[href*="furaffinity."])
 ! "Indy Theme" artist main grids — Testing feasibility. Kinda slow, but works somewhat.
 tumblr.com,~www.tumblr.com##.grid > article[class^=post-]:has-text(/princess ?luna|homestuck|mlp:? ?fim|princess of friendship|batpon|twilight ?sparkle|[ #]eqg[ #]|friendship ?is ?magic|[ #]eqg[ #]|fluttershy/i)
 ! I've struggled bafflingly long to get a kitchen knife that is comparably good to the pink knife masterpiece IKEA sold back in 2017
@@ -607,7 +615,8 @@ pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=shrunk i][cloth i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=oot i][alt*=worship i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"][data-gtm-user-id="70223367"])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt~=tickling i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=female i][alt*=boxing i])
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=boxing i]:is([alt*=wom i],[alt*=female i],[alt*=mother i]))
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=kaa i][href*=hypno i])
 reports.adblockplus.org###reports:style(min-height: 2100px !important)
 reports.adblockplus.org##.slick-viewport:style(min-height: 2100px !important)
 !#endif
@@ -621,7 +630,8 @@ pixiv.net##.works-item:has(img[alt*="baby cloth" i])
 pixiv.net##.works-item:has(img[alt*=shrunk i][cloth i])
 pixiv.net##.works-item:has(img[alt*=oot i][alt*=worship i])
 pixiv.net##.works-item:has(img[alt~=tickling i])
-pixiv.net##.works-item:has(img[alt*=female i][alt*=boxing i])
+pixiv.net##.works-item:has(img[alt*=boxing i]:is([alt*=wom i],[alt*=female i],[alt*=mother i]))
+pixiv.net##.works-item:has(img[alt*=kaa i][href*=hypno i])
 !#endif
 !#if !adguard
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post,.Comment,.thing,shreddit-comment,article.w-full:has-text(/M\orb/i)
@@ -2747,6 +2757,5 @@ google.*##.g:has(a[href*="theherooftomorrow.blogspot.com"])
 google.*##.g:has(a[href*="terribletvshows.miraheze.org"])
 google.*##.g:has(a[href*="pcgamingwiki.com"])
 google.*##.g:has(a[href*="vice.com"])
-!#endif
 !#endif
 !#endif

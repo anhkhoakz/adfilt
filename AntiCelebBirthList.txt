@@ -1,6 +1,6 @@
 [Adblock Plus 3.17]
 ! Title: 😌 Anti-'Newsstories about celebs giving birth' List
-! Version: 03February2023v1-Beta
+! Version: 19April2024v3-Beta
 ! Expires: 3 days
 ! Description: We hear so much talk about "fake news" nowadays, but we never hear any talk about non-news, such as C-tier celebrities either expecting offspring or giving birth to such. This list will aid in removing such kinds of non-news.
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
@@ -54,6 +54,7 @@ nrk.no,vg.no,dagbladet.no,adressa.no,dr.dk,tv2.dk,ekstrabladet.dk,tv2.no##a[href
 nrk.no,vg.no,dagbladet.no,adressa.no,dr.dk,tv2.dk,ekstrabladet.dk,tv2.no##a[href*=underholdning][href*=gravid]
 nrk.no,vg.no,dagbladet.no,adressa.no,dr.dk,tv2.dk,ekstrabladet.dk,tv2.no##a[href*=ny-baby-i-ma]
 nrk.no,vg.no,dagbladet.no,adressa.no,dr.dk,tv2.dk,ekstrabladet.dk,tv2.no##a[href*=venter-barn-]
+nrk.no,vg.no,dagbladet.no,adressa.no,dr.dk,tv2.dk,ekstrabladet.dk,tv2.no##a[href*=gladnyhet]
 
 ! Multiple sites (Norwegian)
 nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=gladnyhet]
@@ -81,11 +82,13 @@ nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=-fa-en-sonn-]
 nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=avsloerer-navnet]
 nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=babynyhet]
 nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=blitt-mamma-]
+nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*="blitt-mamma/"]
 nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=nybakt-mamma]
 nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=nybakt-pappa]
 nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=kjendis]:is([href*=barn],[href*=baby],[href*=gravid],[href*=fodsel],[href*=foedsel])
 nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=skal-bli-foreldr]
 nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*=skal-bli-forelder]
+nrk.no,vg.no,dagbladet.no,adressa.no,tv2.no##a[href*="-gladnyhet/"]
 
 ! Multiple sites (Danish)
 dr.dk,tv2.dk,ekstrabladet.dk##a[href*=andet-barn]
@@ -247,6 +250,9 @@ dr.dk##a[href$=-far]
 
 ! NRK
 nrk.no#?#.kur-newsfeed__message:has-text(/venter\sbarn/i)
+
+! Aftonbladet
+aftonbladet.se##a[href*=fatt-en-dotter]
 
 ! The Guardian
 theguardian.com##ul[data-component*=carousel] li:has(a[href*=pregnan])
