@@ -1,5 +1,5 @@
 ! Title: 🌞 Dandelion Sprout's Anti-Racism List
-! Version: 14April2024v1-Beta-Compilation
+! Version: 25April2024v1-Beta-Compilation
 ! Expires: 5 days
 ! Description: I have been of the ideas that humans should respect each other, help each other and base their activities on actual facts. Sadly, several hundred million internetizens out there did not catch that memo. This list aims to remove such disruptive, hateful and bewilderingly aggressive factors from certain crucial parts of the internet.
 ! Note: There's also many Twitch users who are convinced that Pepe the Frog is not racist, at least not when used for Twitch emotion reactions. I do however not believe them on their claims.
@@ -68,7 +68,7 @@ www.youtube.com#?##dismissable,#dismissible:has-text(/ W(\О|\O)K\E! /)
 www.youtube.com#?##dismissable,#dismissible:has-text(/D\isne\y/i):has-text(/Satan\i[cs]/i)
 www.youtube.com#?##dismissable,#dismissible:has-text(/W(\o|\о)ke|Cultur(\е|\e)\s?War|S\JW|Mar\y\s?Sue|El\on\s|cr\inge/i):has-text(/H\ol{2}\y\s?Wo{2}d|D\isne\y|Star\s?Wars|Marvel|Fe\male|Ahs\oka|D\oct\or\sWho|The\s\Marvels|R\ings?\s\of\sP\ower|Ant(\s|-)?\Man|Br\ie\s|Capta\in\s\Marvel|Devel\oper|Seas\on|J\ournal\is|V\irus|l\ocal\i|ga\m\ing|d\isast|e\mbrac|wr\iter|lunat\ic|creator|West|act\iv\is|We\irdo|character|Ezra|Bends?\s?kne{2}|F\orced|ide\ol\og|med\ia|satani/i)
 www.youtube.com#?##dismissable,#dismissible:has-text(/W(\o|\о)ke|Cultur(\е|\e)\s?War|S\JW|Mar\y\s?Sue|El\on\s|cr\inge|pr\on\oun|insan/i):has-text(/R\E\J\EC\T|BAN{2}\ED|NUCL\EAR|W\ORSE/)
-www.youtube.com#?##dismissable,#dismissible:has-text(/D\ES\TR\O\Y|R\OAS\T|FA\IL\ING|FA\ILUR\E|FA\IL\ED|D\EAD|D\O{2}\M\ED|D\ISAS\T\ER| PAN\IC[ S]|CA\TAS\TR\OP/):has-text(/H\ol{2}\y\s?Wo{2}d|Cal\if\orn\ia|D\isne\y|Star\s?Wars|Marvel|Fe\male|Ahs\oka|The\s\Marvels|R\ings?\s\of\sP\ower|Ant(\s|-)?\Man|D\iverse|Br\ie\s|Capta\in\s\Marvel|Devel\oper|Seas\on|J\ournal\is|V\irus|l\ocal\i|ga\me|d\isast|e\mbrac|wr\iter|creat\or|West|act\iv\is|We\irdo|character|Ezra|W(\o|\о)ke|Bends\s?kne{2}|F\orced|ide\ol\og|insan/i)
+www.youtube.com#?##dismissable,#dismissible:has-text(/D\ES\TR\O\Y|R\OAS\T|FA\IL\ING|FA\ILUR\E|FA\IL\ED|D\EAD|D\O{2}\M\ED|D\ISAS\T\ER| PAN\IC(\s|S)|CA\TAS\TR\OP/):has-text(/H\ol{2}\y\s?Wo{2}d|Cal\if\orn\ia|D\isne\y|Star\s?Wars|Marvel|Fe\male|Ahs\oka|The\s\Marvels|R\ings?\s\of\sP\ower|Ant(\s|-)?\Man|D\iverse|Br\ie\s|Capta\in\s\Marvel|Devel\oper|Seas\on|J\ournal\is|V\irus|l\ocal\i|ga\me|d\isast|e\mbrac|wr\iter|creat\or|West|act\iv\is|We\irdo|character|Ezra|W(\o|\о)ke|Bends\s?kne{2}|F\orced|ide\ol\og|insan/i)
 www.youtube.com#?##dismissable,#dismissible:has-text(/M-Sh\E-U/i)
 www.youtube.com#?##dismissable,#dismissible:has-text(/w(\o|\о)ke/i):has-text(/(\е|\e)\s?war|S\JW|Cr\inge/i)
 www.youtube.com#?##dismissable,#dismissible:has-text(/fe\m\in\is/i):has-text(/\shates?\s(men|manl)|ru\in/i)
