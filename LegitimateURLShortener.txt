@@ -1,5 +1,5 @@
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 9May2024v4
+! Version: 23May2024v1
 ! Expires: 12 hours
 ! Description: In a world dominated by bitLy, adfLy, and several thousand other malware cover-up tools, this list reduces the length of URLs in a much more legitimate and transparent manner. Essentially, it automatically removes unnecessary $/& values from the URLs, making them easier to copy from the URL bar and pasting elsewhere as links. Enjoy.
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
@@ -394,7 +394,8 @@ $doc,removeparam=/^aff_id\d?=.*$/i,domain=~affiliate.salestring.com
 $removeparam=twitchReferral
 
 ! https://www.chancellors.co.uk/properties/r/3714620?elqTrackId=9829ww2ws92q56sfe2sqqqq81525lsw8a
-$removeparam=elqTrackId
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-9528930
+$doc,removeparam=elqTrackId,domain=~comcast.com|~comcastforbusiness.com
 
 ! https://www.netflix.com/watch/80057171?trackId=14170056&tctx=2%2C0%2Cad3cd321-a42b-461e-81d3-b18c51559559-25047246%2Ce7fede3c-e54d-4941-9849-8fb5d51dbada_37683809X10XX1622546150880%2Ce7fede3c-e54d-4941-9849-8fb5d51dbada_ROOT%2C
 $removeparam=tctx
@@ -411,7 +412,7 @@ $removeparam=partition_id
 $removeparam=adgroup_id
 $removeparam=rlsatarget
 $doc,removeparam=targetid,domain=~myanonamouse.net
-$removeparam=elqCampaignId
+$doc,removeparam=elqCampaignId,domain=~comcast.com|~comcastforbusiness.com
 $removeparam=dc_campid
 $removeparam=dc_adgroupid
 $removeparam=adgroupid
@@ -542,12 +543,12 @@ $doc,removeparam=/^adjust.*$/,domain=~adj.st
 
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1169570
-$removeparam=elq
-$removeparam=elqaid
-$removeparam=elqat
-$removeparam=elqah
-$removeparam=elqcst
-$removeparam=elqcsid
+$doc,removeparam=elq,domain=~comcast.com|~comcastforbusiness.com
+$doc,removeparam=elqaid,domain=~comcast.com|~comcastforbusiness.com
+$doc,removeparam=elqat
+$doc,removeparam=elqah
+$doc,removeparam=elqcst
+$doc,removeparam=elqcsid
 $doc,removeparam=/^ga_.*$/
 $removeparam=_hsenc
 $removeparam=_hsmi
@@ -1889,6 +1890,8 @@ $removeparam=/^asc_.*$/,doc,domain=amazon.*|aboutamazon.com|amzn.to
 ||www.amazon.$removeparam=/^[a-z_]{1,20}=[a-zA-Z0-9._-]{80,}$/
 ||www.amazon.$removeparam=sp_csd
 ||www.amazon.$removeparam=dib_tag
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-9484579
+@@||amazon.*/profilewidget^$removeparam,~doc
 
 !!! ——— Bing ———
 ! https://www.bing.com/search?q=hello&form=QBLH&sp=-1&pq=hello&sc=8-5&qs=n&sk=&cvid=49B83A335B1C4884B71B2FAD4A8027A9 (02/03/2021)
@@ -2192,7 +2195,7 @@ $removeparam=gtm
 ! https://www.tv2.no/a/10534772?referral=tv2v (27/11/2020)
 $removeparam=referral,domain=tv2.no|spotify.com|yubo.live
 ! https://open.spotify.com/album/7D2NdGvBHIavgLhmcwhluK?nd=1
-||spotify.com^$removeparam=nd
+!!! ||spotify.com^$removeparam=nd - https://github.com/DandelionSprout/adfilt/issues/1031
 ! https://open.spotify.com/album/6Mf15O3wMv52ySP3aSTre1?uid=1dadcf09fbbee47a&uri=spotify%3Atrack%3A3HoSi38l1e6E1K1lHWUCeV — https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-8867924
 ||open.spotify.com^$removeparam=uid
 !!! Don't remove "uri", as it seems to involve source songs to some extent.
