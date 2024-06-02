@@ -1,6 +1,6 @@
 [Adblock Plus 3.18]
 ! Title: 🏡 a.txt (Imres filtre)
-! Version: 24May2024v1-Personal
+! Version: 31May2024v2-Personal
 ! Expires: 12 hours
 ! Description: This list, and any other lists whose version is suffixed with "-Personal", are _NOT_ intended for public use, except for 1) those who wish to authentically reproduce my list setup in issue reports, and 2) enthusiasts who want to try out pre-spin-off pre-alpha list concepts of mine.
 !#if !env_mv3
@@ -94,7 +94,7 @@ kidscreen.com##.listpost:has(a[href*=avatar-])
 kidscreen.com##.listpost:has(a[href*=funko])
 kidscreen.com##.listpost:has(a[href*=roblox])
 kidscreen.com##.listpost:has(a[href*=metaverse])
-www.deviantart.com##div[style^="width:"][style*="display:"]:has(a[href*="/art/"]):has([href*=-dragon- i],[href*=-dragons- i],[href*="/dragon-" i],[href*="/dragons-" i],[href*=starcatcher i],[href*=star-catcher i],[href*=starwishes i],[href*=roblox i],[href*=blend-s- i],[href*=pomni i],[href*=social i][href*=desc i],[href*=einstein i]:is([href*=little i],[href*=june i],[href*=disney i]),[href*=amazing-digital-circus i],[href*=tadc i],[href*="/caine-" i],:is([href*=specialist i],[href*=timmy i],[href*=brandon i]):is([href*=winx i],[href*=tecna i],[href*=bloom i],[href*=stella i],[href*=musa i],[href*=alfea i]))
+www.deviantart.com##div[style^="width:"][style*="display:"]:has(a[href*="/art/"]):has([href*=-dragon- i],[href*=-dragons- i],[href*="/dragon-" i],[href*="/dragons-" i],[href*=starcatcher i],[href*=star-catcher i],[href*=starwishes i],[href*=roblox i],[href*=blend-s- i],[href*=pomni i],[href*=social i][href*=desc i],[href*=einstein i]:is([href*=little i],[href*=june i],[href*=disney i]),[href*=amazing-digital-circus i],[href*=tadc i],[href*="/caine-" i],:is([href*=specialist i],[href*=timmy i],[href*=brandon i]):is([href*=winx i],[href*=tecna i],[href*=bloom i],[href*=stella i],[href*=musa i],[href*=alfea i],[href*=abethicewin i]))
 deviantart.com##a[data-hook][href*="/art/"][href*=-dragon- i]
 deviantart.com##a[data-hook][href*="/art/"][href*=-dragons- i]
 deviantart.com##a[data-hook][href*="/art/"][href*="/dragon-" i]
@@ -110,6 +110,7 @@ deviantart.com##a[data-hook][href*="/art/"][href*=einstein i]:is([href*=little i
 deviantart.com##a[data-hook][href*="/art/"][href*=amazing-digital-circus i]
 deviantart.com##a[data-hook][href*="/art/"][href*=tadc i]
 deviantart.com##a[data-hook][href*="/art/"][href*="/caine-" i]
+deviantart.com##a[data-hook][href*="/art/"][href*=abethicewin i]
 deviantart.com##a[data-hook][href*="/art/"]:is([href*=specialist i],[href*=timmy i],[href*=brandon i]):is([href*=winx i],[href*=tecna i],[href*=bloom i],[href*=stella i],[href*=musa i],[href*=alfea i])
 deviantart.com##a[data-hook][href*="/art/"][href*=chelsea i]:is([href*=athena i],[href*=flounder i],[href*=ariel i],[href*=alle i],[href*=sebastian i])
 deviantart.com##div[class^=_]:nth-of-type(2):last-of-type a[href*="/team/journal/"]:upward(2)
@@ -631,6 +632,9 @@ adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=supportergrup
 adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=kjernen i]:is([href*=sport i],[href*=styret i],[href*=klubb i])
 adressa.no,nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no##a[href*=klanen i]:is([href*=sport i],[href*=styret i],[href*=klubb i])
 
+! The Michelin guides are extremely heavily rigged in favour of French and Japanese food, getting drunk on wine, and abusive bosses.
+adressa.no,www.nrk.no,tv2.no,vg.no,dagbladet.no,nettavisen.no,www.dr.dk,theguardian.com,bbc.*##a[href*=michelin i]
+
 !if !env_mobile
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"]):has-text(/^.*fe{2}t\ies.*$/i)
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt^="blocked," i])
@@ -646,7 +650,7 @@ pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=oot i][alt*=worship
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"][data-gtm-user-id="70223367"])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt~=tickling i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=kaa i]:is([href*=hypno i],[href*=snake i],[href*=jungle i]))
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img:is([alt*=boxing i],[alt*=boxer i],[alt*=ボクシング i]):not([alt*=unboxing i],[alt*=ali i],[alt*=frazier i],[alt*=tyson i],[alt*=wii_sports i],[alt*=wiisports i],[alt*="wii sports" i],[alt*=ウィー][alt*=スポーツ],[alt*=モハメド]))
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img:is([alt*=boxing i],[alt*=boxer i],[alt*=ボクシング i],[alt*=" KO 🥊 "]):not([alt*=unboxing i],[alt*=ali i],[alt*=frazier i],[alt*=tyson i],[alt*=wii_sports i],[alt*=wiisports i],[alt*="wii sports" i],[alt*=ウィー][alt*=スポーツ],[alt*=モハメド]))
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=giv i][alt*=birth i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*="title too long" i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=maternity i])
@@ -670,7 +674,7 @@ pixiv.net##.works-item:has(img[alt*=shrunk i][cloth i])
 pixiv.net##.works-item:has(img[alt*=oot i][alt*=worship i])
 pixiv.net##.works-item:has(img[alt~=tickling i])
 pixiv.net##.works-item:has(img[alt*=kaa i]:is([href*=hypno i],[href*=snake i],[href*=jungle i]))
-pixiv.net##.works-item:has(img:is([alt*=boxing i],[alt*=boxer i],[alt*=ボクシング i]):not([alt*=unboxing i],[alt*=ali i],[alt*=frazier i],[alt*=tyson i],[alt*=wii_sports i],[alt*=wiisports i],[alt*="wii sports" i],[alt*=ウィー][alt*=スポーツ],[alt*=モハメド]))
+pixiv.net##.works-item:has(img:is([alt*=boxing i],[alt*=boxer i],[alt*=ボクシング i],[alt*=" KO 🥊 "]):not([alt*=unboxing i],[alt*=ali i],[alt*=frazier i],[alt*=tyson i],[alt*=wii_sports i],[alt*=wiisports i],[alt*="wii sports" i],[alt*=ウィー][alt*=スポーツ],[alt*=モハメド]))
 pixiv.net##.works-item:has(img[alt*=giv i][alt*=birth i])
 pixiv.net##.works-item:has(img[alt*="title too long" i])
 pixiv.net##.works-item:has(img[alt*=maternity i])
@@ -702,7 +706,7 @@ tumblr.com#?#:is(.post,article,div[data-cell-id][style],div[tabindex]:is([style^
 ! None of those people have the slightest tiniest idea what a game challenge is. Every single one of theirs is worse than even standard Nuzlocke. I could create a better Sims challenge with my toes on the keyboard and blindfolded.
 modthesims.info###creativityforums
 ! I don't have any consistent energy anymore, and it's been like this for 14 months at the time of writing. I feel empty like a cube of air.
-github.com##.d-none[href*="DandelionSprout/adfilt" i] ~ div .react-directory-row:has-text(/^.*(Happ\y\T\i\me\FunClub|R\ickrollL\ink\Ident\if\ier|Ass\istantReborn|Extre\mel\yCondensedL\ist|GDPR\s451|Battle\sRo\yale|Fake\sNot\if\icat\ion\s|Userna\me\sH\ider|Google\sHangout|Tw\itterPureRead\ing\Exper\ience|A\mazonL\ist\For\Tw\itch|D\isallowed\IPs|Anno\y\ingBannersAnd\Overla\ys|\sCarols|Pro-L\ED|Ant\iPork\Meat\OnRestaurant\MenusL\ist|Anc\ientL\ibrar\y|Ant\i-Sk\ype\sL\ist|Ant\iPepeL\ist|AntiKpopSpammersTwitter).*$/i):style(background-color: #5E3350 !important)
+github.com##.d-none[href*="DandelionSprout/adfilt" i] ~ div .react-directory-row:has-text(/^.*(Happ\y\T\i\me\FunClub|R\ickrollL\ink\Ident\if\ier|Ass\istantReborn|Extre\mel\yCondensedL\ist|GDPR\s451|Battle\sRo\yale|Fake\sNot\if\icat\ion\s|Userna\me\sH\ider|Google\sHangout|Tw\itterPureRead\ing\Exper\ience|A\mazonL\ist\For\Tw\itch|D\isallowed\IPs|Anno\y\ingBannersAnd\Overla\ys|\sCarols|Pro-L\ED|Ant\iPork\Meat\OnRestaurant\MenusL\ist|Anc\ientL\ibrar\y|Ant\i-Sk\ype\sL\ist|Ant\iPepeL\ist|AntiKpopSpammersTwitter|TwitchPureViewingExperience).*$/i):style(background-color: #5E3350 !important)
 
 ! People I just really don't like, without it being deserving of going on public lists
 github.com#?#div[id^=issue_]:has-text(/^.*\skulf\o\on.*$/)
