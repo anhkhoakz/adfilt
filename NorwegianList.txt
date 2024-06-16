@@ -1,6 +1,6 @@
 ! Title: 🏔️ Dandelion Sprouts nordiske filtre for ryddigere nettsider
 ! Title 🇬🇧: Dandelion Sprout's Nordic filters for tidier websites
-! Version: 28May2024v2
+! Version: 15June2024v1
 ! Expires: 18 hours
 ! Lisens / Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md
@@ -940,6 +940,7 @@ madbanditten.dk##.madbanditten-widget
 gunnarandreassen.com##a[href*=dreamz]
 midtsiden.no##main > div > div:not([class])
 journalisten.dk##.article:style(padding-bottom: 10px !important)
+datamaskin.biz##.ad2
 latterkula.no##a[title*=spill]
 kundeavisogtilbud.no,tilbudsaviseronline.dk##.anchor-wrapper
 fcbarcelona.dk##.bluebox.custom
@@ -1195,6 +1196,7 @@ gamereactor.*##.external_div_videoAd
 gamereactor.*###grtvbelt_Sponsored:upward(1)
 gamereactor.*##.ad_interscroller:upward(.wrapper)
 sjoborg.no##div[data-debuglabel=_app]
+gulesider.no##div.place-items-center.grid:has([data-adunitid])
 ! — — — — — — — — —
 ! 🇳🇴: Oppføringer for minst 3 nettsteder
 ! 🇬🇧: Entries for at least 3 websites
@@ -1633,6 +1635,7 @@ contentMarketing$xhr,domain=sol.no
 ||ytresogn.no/wp-content/uploads/2020/02/Ytre_718_360_2.jpg^
 ||gamereactor.*/ads^
 ||gamereactor.*/exclusive.json^
+||datamaskin.biz/ad/
 ! — — — — — — —
 ! 🇳🇴: Filtjener- eller nettstedsspesifikke oppføringer med kilder
 ! 🇳🇴🏞: Filtenar- eller nettstadsspesifikke oppføringar med kildar
@@ -2201,6 +2204,7 @@ startsiden.no##div[class^=nyttig__tippingHeader__]
 ||cloudfront.net/v*/Liveoddsen.aspx^$domain=vglive.no
 abcnyheter.no##div + section[class*=" o-section__between-layout"]
 startsiden.no##a[id^=desked-section][data-orig-url]
+.cloudfront.net/oddsen^$subdocument,third-party,domain=~norsk-tipping.no|~tipster.no
 ! nidaros.no (02/12/2021)
 ##.sportspill-container[href*=lotto]:not(html,body,:empty)
 ! h-avis.no (11/12/2023)

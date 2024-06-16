@@ -1,6 +1,6 @@
 [Adblock Plus 3.15]
 ! Title: ▶️ YouTube: Even More Pure Video Experience
-! Version: 25April2024v1
+! Version: 14June2024v1
 ! Expires: 6 days
 ! Description: This list removes even more distracting or uncomfortable things on YouTube.
 ! If you want to block even more things on top of these two lists, feel free to check out the anti-Autoplay (https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt) and anti-Elsagate (https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt) lists that I've made.
@@ -27,8 +27,8 @@ www.youtube.com##.ytp-button.ytp-miniplayer-button
 www.youtube.com##ytd-guide-entry-renderer:has(a[href*=UC4R8DWoMoI7CAwX8_LjQHig])
 
 ! Removes the Homepage button in the left-hand menu
-www.youtube.com##ytd-guide-entry-renderer:has(a[href="/"])
-www.youtube.com##ytd-mini-guide-entry-renderer:has(a[href="/"])
+!!!www.youtube.com##ytd-guide-entry-renderer:has(a[href="/"])
+!!!www.youtube.com##ytd-mini-guide-entry-renderer:has(a[href="/"])
 m.youtube.com##.scbrr-tab[href="/"]
 m.youtube.com##ytm-pivot-bar-item-renderer:first-of-type
 
@@ -50,13 +50,14 @@ hooktube.com##.col-lg-4:has(#video-list)
 ! Seems to remove "Recommended for you" suggestions
 ||youtube.com/related_ajax^
 ! Hopefully removes recommendations from the 2024 very slow rollout of "Video recommendations below the video"… hopefully. Hard to tell at the moment.
-youtube.com,~m.youtube.com##ytd-rich-grid-renderer
+! (Turned out to remove channels' video archives.)
+!!!youtube.com,~m.youtube.com##ytd-rich-grid-renderer
 
 ! Removes the like/dislike counters
 youtube.com##ytd-toggle-button-renderer #text
 youtube.com###sentiment
 m.youtube.com##.slim-video-metadata-actions > [data-button-id]:first-of-type .button-renderer-text
-m.youtube.com##.slim-video-metadata-actions > [data-button-id]:nth-of-type(2) .button-renderer-text
+!!!m.youtube.com##.slim-video-metadata-actions > [data-button-id]:nth-of-type(2) .button-renderer-text
 inv.riverside.rocks,invidio.xamh.de,invidious-jp.kavin.rocks,invidious-us.kavin.rocks,invidious.exonip.de,invidious.hub.ne.kr,invidious.kavin.rocks,invidious.namazso.eu,invidious.snopyta.org,vid.mint.lgbt,vid.puffyan.us,y.com.cm,yewtu.be,youtube.076.ne.jp,yt.artemislena.eu,yt.didw.to,ytb.trom.tf,ytprivate.com,c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion,w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion,kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion,grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion,hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion,invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion,osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion,p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion,k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion###likes, #dislikes
 hooktube.com###video-stats .text-right
 hooktube.com###progress-bar-likes
@@ -135,30 +136,6 @@ inv.riverside.rocks,invidio.xamh.de,invidious-jp.kavin.rocks,invidious-us.kavin.
 
 ! ————————————————————————————————————————————————————————————————
 
-! ——— "Disable Polymer" mode ———
-
-! Removes the Homepage button in the left-hand menu when using "Disable polymer"
-www.youtube.com###what_to_watch-guide-item
-
-! Removes the video store and YouTube Gaming buttons in the left-hand menu when using "Disable polymer"
-www.youtube.com##li.guide-section:nth-of-type(5) > .personal-item.guide-item-container > .yt-box.yt-uix-tdl.guide-user-links
-
-! Removes the Discover button in the left-hand menu when using "Disable polymer"
-www.youtube.com##li.guide-section:nth-of-type(4)
-
-! Removes the Trending button in the left-hand menu when using "Disable polymer"
-www.youtube.com###trending-guide-item
-
-! Attempts to remove YouTube frontpage recommended videos and channels when using "Disable polymer" (and using YouTube in a Germanic language)
-www.youtube.com#?#.feed-item-container.browse-list-item-container:has(.shelf-title-annotation:has-text( for ))
-
-! Removes the like/dislike counters
-www.youtube.com##.like-button-renderer-like-button > .yt-uix-button-content
-www.youtube.com##.like-button-renderer-dislike-button > .yt-uix-button-content
-www.youtube.com##.video-extras-sparkbars
-
-! ————————————————————————————————————————————————————————————————
-
 ! ——— "TV" mode ———
 
 ! Removes most video suggestions in TV mode
@@ -166,10 +143,10 @@ www.youtube.com##.video-extras-sparkbars
 www.youtube.com##.exp-enable-live-seeking > #leanback > #app-markup > #watch > #bottom-half .pivot-row .watchable-tile:nth-of-type(1n+2)
 
 ! Removes the Trending button in the top bar. At least I think it's the Trending button.
-www.youtube.com##div.top-nav-tab:nth-of-type(2)
+!!!www.youtube.com##div.top-nav-tab:nth-of-type(2)
 
 ! Removes the Gaming button in the top bar
-www.youtube.com#?#div.top-nav-tab:has-text(/^Gaming$/)
+!!!www.youtube.com#?#div.top-nav-tab:has-text(/^Gaming$/)
 
 ! ————————————————————————————————————————————————————————————————
 
@@ -186,15 +163,15 @@ www.youtube.com#?#div.top-nav-tab:has-text(/^Gaming$/)
 ||youtube.com/comment_service_ajax?$domain=youtube.com|youtu.be|youtube-nocookie.com
 youtube.com###comments
 ! Removes all annotations in videos
-||youtube.com/annotations_invideo?$object-subrequest
+!!!||youtube.com/annotations_invideo?$object-subrequest
 ! HTML5 version
-youtube.com,youtube-nocookie.com##.video-annotations
+!!!youtube.com,youtube-nocookie.com##.video-annotations
 ! Removes video suggestions on video pages
 youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
-! Removes recommended channels on home page, susbcriptions page and feed
-youtube.com##.home .branded-page-v2-secondary-col
-youtube.com##.feed .branded-page-v2-secondary-col
-youtube.com##.guide-builder-v2 .branded-page-v2-secondary-col
+! Removes recommended channels on home page, subscriptions page and feed
+!!!youtube.com##.home .branded-page-v2-secondary-col
+!!!youtube.com##.feed .branded-page-v2-secondary-col
+!!!youtube.com##.guide-builder-v2 .branded-page-v2-secondary-col
 ! Removes sharing tab below videos
 ||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
 youtube.com##.action-panel-trigger[role=button][data-trigger-for=action-panel-share]
