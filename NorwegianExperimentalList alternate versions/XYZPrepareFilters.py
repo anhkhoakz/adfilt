@@ -91,13 +91,13 @@ def prepare_ag(lines) -> str:
 
         line = re.sub(
            r"^\|\|(([1-2]?[0-9]?[0-9]\.?){4})\^\$.*$", 
-           r"\1$network", 
+           r"!+ PLATFORM(windows, mac, android)\n\1$network\n!+ NOT_PLATFORM(windows, mac, android)\n||\1^$all", 
            line
         )
 
         line = re.sub(
            r"^\|\|(([1-2]?[0-9]?[0-9]\.?){4})\^", 
-           r"\1$network", 
+           r"!+ PLATFORM(windows, mac, android)\n\1$network\n!+ NOT_PLATFORM(windows, mac, android)\n||\1^$all", 
            line
         )
 
@@ -237,6 +237,36 @@ def prepare_ag(lines) -> str:
         line = re.sub(
            r"\$ghide", 
            r"$generichide", 
+           line
+        )
+
+        line = re.sub(
+           r"\.\.\*\$", 
+           r".*$", 
+           line
+        )
+
+        line = re.sub(
+           r",~inline-font,", 
+           r",", 
+           line
+        )
+
+        line = re.sub(
+           r",~inline-font$", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"\$xhr,", 
+           r"$xmlhttprequest,", 
+           line
+        )
+
+        line = re.sub(
+           r"\$1p$", 
+           r"$~third-party", 
            line
         )
 
@@ -4711,7 +4741,7 @@ def prepare_ag(lines) -> str:
 
         line = re.sub(
            r"^\|\|(([1-2]?[0-9]?[0-9]\.?){4})\^\$.*$", 
-           r"\1$network", 
+           r"!+ PLATFORM(windows, mac, android)\n\1$network\n!+ NOT_PLATFORM(windows, mac, android)\n||\1^$all", 
            line
         )
 

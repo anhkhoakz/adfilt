@@ -1,6 +1,6 @@
 ! Title: 🏔️ Dandelion Sprouts nordiske filtre for ryddigere nettsider
 ! Title 🇬🇧: Dandelion Sprout's Nordic filters for tidier websites
-! Version: 20June2024v1
+! Version: 27June2024v1
 ! Expires: 18 hours
 ! Lisens / Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md
@@ -1045,6 +1045,8 @@ itavisen.no,ba.no##.sponsored
 austurfrett.is##.upperad
 denstoredanske.dk###banner-zone-1
 f7.no##div[class*=-custom_ad_]
+netthandel.no##.type-post .elementor-widget-shortcode
+netthandel.no##body.home > div section[data-settings*=background_background]
 itavisen.no##.single-post .code-block:has(script)
 baadmagasinet.dk##.t3-sl
 tek.no#?#main > div > div:has-text(kommersielle partner)
@@ -1623,6 +1625,7 @@ contentMarketing$xhr,domain=sol.no
 ||verktoy24.no/wp-content/uploads/*_300px-scaled.jpg^
 ||vf.is/media/1/*2000x616.jpg^
 ||vf.is/media/1/geysir-dekkjaskipti.jpg^
+||elton.app/widget/$domain=tek.no
 ||viasport-assets.mtg-api.com/*/prod/comScore-*.js$script
 ||vikari.is/skjol/frjalsi-lif*.png^
 ||viralefilmer.no/wp-content/uploads/*slot-
@@ -2400,6 +2403,7 @@ triplx.dk##.aff-inner-col
 ||bankid-sperret.$all,domain=~en-falsk-banksvindel.*
 ||srilanka.no^$doc
 ||innboks.info^$all
+||skaatteenok.com^$all,domain~=en-falsk-svindelside.*
 !+ NOT_OPTIMIZED
 /?finn.no/login$doc
 ! 🇬🇧: Copied over from «Dandelion Sprout's Anti-Malware List»
@@ -2494,7 +2498,7 @@ triplx.dk##.aff-inner-col
 ! https://www.nrk.no/livsstil/1.14732503
 ||elkjop*.club^$doc,domain=~en-falsk-svindelbutikk.*
 ! https://www.datahjelperne.no/sparebank1-kortet-ditt-er-blokkert-mail-phishing/
-/css/*sparebank1.no^$docen-svindelside-som-ikke-er-sparebank1.*
+/css/*sparebank1.no^$doc,domain=~en-svindelside-som-ikke-er-sparebank1.*
 ! https://www.facebook.com/viralspiralen/posts/2494251397311027
 ||addmoviesnow.com^$doc
 ! https://www.mm.dk/tjekdet/artikel/faarup-sommerland-advarer-mod-gratis-billetter-det-er-spam-og-fup
