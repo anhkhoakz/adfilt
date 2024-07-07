@@ -1,6 +1,6 @@
 [Adblock Plus 3.18]
 ! Title: 🏡 a.txt (Imres filtre)
-! Version: 26June2024v6-Personal
+! Version: 06July2024v1-Personal
 ! Expires: 12 hours
 ! Description: This list, and any other lists whose version is suffixed with "-Personal", are _NOT_ intended for public use, except for 1) those who wish to authentically reproduce my list setup in issue reports, and 2) enthusiasts who want to try out pre-spin-off pre-alpha list concepts of mine.
 !#if !env_mv3
@@ -565,7 +565,7 @@ dominos.*#?#div[class^=CardGrid_grid__] > div:not([class],[id]):has-text(/pep{2}
 peppes.no#?#.product-section > div:has-text(/pep{2}eron\i|bacon|sk\inke|B{2}Q-saus|sop{2}|jalape[ñn]o|ndu\ja|sala\m\i|Blue\s?Cheese/i)
 egon.no#?#.menu-item-wrap:has-text(/Karbonade|\sreke|kalkunsk\inke|sca\mp\i|sop{2}|gorgonzola|jalape[nñ]o|\s\m\ynte|ørret/i)
 foodora.no#?#.product-tile:has-text(/bacon|chor\izo|sv\in|hv\it\s?v\in|rødv\in|reke[hcr]|sk\inke|sala\m\i|sopp|sjømat|gorgonzola|pølse|blåmugg/i)
-wolt.com,~*.wolt.com#?#div[data-test-id=horizontal-item-card]:has-text(/b[as]con|salami|sopp|skinke|Reke[rsc]|blåmugg|rødvin|pork|pepperoni|jal[ae]pe[nñ]o|n(`|\')?duja|ventricina|gorgonzola|mushroom| parma[ ,]|blue ?cheese|sjampinjong|serrano|chorizo|scampi|svin[ ,]| Reke|fiskekake|karripast|svinekjøtt| fisk[ ,]|rød ?karri|champ?ignon|chilipaste|panae?ng|torsk|skalldyr|ørret|salmon|pølse| laks[ ,e]|kamskjell|tunfisk|kveite| Tuna |\(Svin|blåost|fiskefilet|pancetta|mortadella|Munkholm |bresaola|blekksprut|capocollo|guanciale|ansjos|shrimp|Haba[nñ]ero|svinenakke|mac( |‘|\')(n|and|&) ?cheese| øl /i)
+wolt.com#?#div[data-test-id=horizontal-item-card]:has-text(/b[as]con|salami|sopp|skinke|Reke[rsc]|blåmugg|rødvin|pork|pepperoni|jal[ae]pe[nñ]o|n(`|\')?duja|ventricina|gorgonzola|mushroom| parma[ ,]|blue ?cheese|sjampinjong|serrano|chorizo|scampi|svin[ ,]| Reke|fiskekake|karripast|svinekjøtt| fisk[ ,]|rød ?karri|champ?ignon|chilipaste|panae?ng|torsk|skalldyr|ørret|salmon|pølse| laks[ ,e]|kamskjell|tunfisk|kveite| Tuna |\(Svin|blåost|fiskefilet|pancetta|mortadella|Munkholm |bresaola|blekksprut|capocollo|guanciale|ansjos|shrimp|Haba[nñ]ero|svinenakke|mac( |‘|\')(n|and|&) ?cheese| øl /i)
 tumblr.com##div[data-timeline*="/blog/"] header + div + div > div:has-text(/m\in\ister[ -]of[ -]spr\ing/i):not(:has-text(/m\in\ister[ -]of[ -](w\inter|su\m\mer|fall)/i)):upward(div[data-cell-id])
 tumblr.com##div[data-timeline*="/blog/"] header + div:has-text(/m\in\ister[ -]of[ -]spr\ing/i):not(:has-text(/m\in\ister[ -]of[ -](w\inter|su\m\mer|fall)/i)):upward(div[data-cell-id])
 tumblr.com##div[data-timeline*="/timeline/"] div[style^=width] > div[tabindex]:has-text(/m\in\ister[ -]of[ -]spr\ing/i):not(:has-text(/m\in\ister[ -]of[ -](w\inter|su\m\mer|fall)/i))
@@ -639,7 +639,7 @@ pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=shrunk i][cloth i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=oot i][alt*=worship i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"][data-gtm-user-id="70223367"])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt~=tickling i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=kaa i]:is([href*=hypno i],[href*=snake i],[href*=jungle i]))
+pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=kaa i]:is([alt*=hypno i],[alt*=snake i],[alt*=jungle i]))
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img:is([alt*=boxing i],[alt*=boxer i],[alt*=ボクシング i],[alt*=" KO 🥊 "]):not([alt*=unboxing i],[alt*=ali i],[alt*=frazier i],[alt*=tyson i],[alt*=wii_sports i],[alt*=wiisports i],[alt*="wii sports" i],[alt*=ウィー][alt*=スポーツ],[alt*=モハメド]))
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=giv i][alt*=birth i])
 pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*="title too long" i])
@@ -662,7 +662,7 @@ pixiv.net##.works-item:has(img[alt*="baby cloth" i])
 pixiv.net##.works-item:has(img[alt*=shrunk i][cloth i])
 pixiv.net##.works-item:has(img[alt*=oot i][alt*=worship i])
 pixiv.net##.works-item:has(img[alt~=tickling i])
-pixiv.net##.works-item:has(img[alt*=kaa i]:is([href*=hypno i],[href*=snake i],[href*=jungle i]))
+pixiv.net##.works-item:has(img[alt*=kaa i]:is([alt*=hypno i],[alt*=snake i],[alt*=jungle i]))
 pixiv.net##.works-item:has(img:is([alt*=boxing i],[alt*=boxer i],[alt*=ボクシング i],[alt*=" KO 🥊 "]):not([alt*=unboxing i],[alt*=ali i],[alt*=frazier i],[alt*=tyson i],[alt*=wii_sports i],[alt*=wiisports i],[alt*="wii sports" i],[alt*=ウィー][alt*=スポーツ],[alt*=モハメド]))
 pixiv.net##.works-item:has(img[alt*=giv i][alt*=birth i])
 pixiv.net##.works-item:has(img[alt*="title too long" i])
@@ -977,6 +977,11 @@ no,dk##a[href*=populaer i][href*=tiktok i]
 no,dk##a[href*=populr i][href*=tiktok i]
 no,dk,theguardian.com,bbc.*##a[href*=popular i][href*=tiktok i]
 no,dk,theguardian.com,bbc.*##a[href*=trend i][href*=tiktok i]
+dk##a[href*=tour i]
+dk##a[href*=etape i]
+dk##a[href*=rytter i]
+dk##a[href*=cykel i]
+dk##a[href*=cyklist i]
 
 ! Depressing winter stuff
 adressa.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,tv2.no,sermitsiaq.ag##a[href*=-jule i]
@@ -1218,6 +1223,13 @@ pixiv.net##.works-item:has(img[alt*=pregnan i])
 pixiv.net##.works-item:has(img[alt*=pregant i])
 pixiv.net##.works-item:has(img[alt*=preganc i])
 !#endif
+
+! Tech conspiracy cults that spread blatant shameful lies that have been disproved for ≥10 years (about e.g. DAB and WebP)
+||publicaccess.se^
+||public-service.net^
+||kringkastingslaget.com^
+||digitalradioinsider.blogspot.se^
+||hvemslukketlyset.no^
 
 ! Workaround while testing for Chrome freezes (Specifically to see if "Google Hit Hider by Domain" can remain turned off)
 google.*##div[data-ow]:has(a[href*="deviantart.com"])
