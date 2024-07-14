@@ -1,6 +1,6 @@
 [Adblock Plus 3.18]
 ! Title: 👸 Anti-FіМ List
-! Version: 23June2024v2
+! Version: 12July2024v4
 ! Expires: 5 days
 ! Description: Do you feel that Friendship is Magic overstayed its welcome? Here's a list that'll let you keep more of a distance to it.
 ! Motivation: You probably think that I'm one of those "Men shouldn't watch My Little Pony" fools? Nope, on the contrary. Being a fulltime viewer of actual preschool cartoons (read: Nella the Princess Knight, etc.), and have therefore seen just how staggeringly irrational that bronies can act towards them, I consider bronies to be fakers who preach hatred, destruction, and clan mentality, and I strongly regret that I was once one of them, many years ago.
@@ -1844,6 +1844,31 @@ rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34h
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=ponified])
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*="winona_(mlp)"])
 rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=wonderbolt])
+
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=maud_pie])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=fallout][title*="equestria "])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title~=littlepip])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=dj_pon-3])
+
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=" zecora"])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=fluttergoth])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title~=sunset_shimmer])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=derpy_hooves])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*="apple_bloom_(mlp)"])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*="mrs._cake_(mlp)"])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=silverstream_(mlp)])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=nightmare_moon_])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=bat_pony])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=batpony])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=lyra_heartstring])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=flutterbat])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*="pinkie_pie_(eg)"])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*="rainbow_dash_(eg)"])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*="rarity_(eg)"])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*="button_mash_(mlp)"])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*="trixie_(mlp)"])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=starlight_glimmer])
+rule34.xxx,gelbooru.com,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=tempest_shadow])
 
 ! E621
 e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=fluttershy]
@@ -4735,13 +4760,18 @@ apps.apple.com##a[href*=zen-pinball-party]
 
 ! Google (test; uBO and AdGuard only)
 !#if !env_mobile
-www.google.*##.g:has(a[href*="equestriadaily.com/"])
+www.google.*##:is(.g,div[data-attrid^="images "]):has(a[href*="equestriadaily.com/"])
+www.google.*#?#:is(.g,div[data-attrid^="images "]):has-text(/mlp|m\y\sl\ittle\sp\on\y/i):has-text(/starlight/i):not(:has-text(/secrets\s?of/i))
+www.google.*#?#:is(.g,div[data-attrid^="images "]):has-text(/starl\ight/i):has-text(/Gl\immer/i)
+www.google.*##:is(.g,div[data-attrid^="images "]):has(a[href*=starlight-glimmer i])
+www.google.*##:is(.g,div[data-attrid^="images "]):has(a[href*="/equestria/" i])
+www.google.*##:is(.g,div[data-attrid^="images "]):has(a[href*="/r/mylittlepony/"])
+www.google.*#?#:is(.g,div[data-attrid^="images "]):has-text(/Flut{2}ershy/i)
+www.google.*##:is(.g,div[data-attrid^="images "]):has(a[href*=pony-town-][href*=".tumblr.com/"])
 !#endif
 !#if env_mobile
 www.google.*#?#a[oncontextmenu][href*="equestriadaily.com/"]:upward(2)
 !#endif
-google.*#?#.isv-r:has-text(/Flut{2}ershy/i)
-google.*##.isv-r:has(a[href*=pony-town-][href*=".tumblr.com/"])
 
 ! DuckDuckGo (test)
 duckduckgo.com,3g2upl4pq6kufc4m.onion##[data-domain$="equestriadaily.com"]

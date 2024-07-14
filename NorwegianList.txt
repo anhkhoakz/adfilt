@@ -1,6 +1,6 @@
 ! Title: 🏔️ Dandelion Sprouts nordiske filtre for ryddigere nettsider
 ! Title 🇬🇧: Dandelion Sprout's Nordic filters for tidier websites
-! Version: 03July2024v1
+! Version: 11July2024v1
 ! Expires: 18 hours
 ! Lisens / Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md
@@ -637,7 +637,6 @@ gaming.dk##.article-body > .row
 sol.no##.xrow:has(> div[class*=" "] > span[class])
 minmote.no##.advert-horseshoe
 kreativtforum.no##aside > .overflow-hidden.mb-6
-tv2.dk##div[class=tc_deck]
 norsk-rally.com###left > .bgbottom > .moduletable
 gulesider.no##div[class*=" h-[calc"]
 vg.no##.type-advert
@@ -694,6 +693,7 @@ ekstrabladet.dk###front-ekstrabladet-dk-native-1
 pressfire.no##.ad-netboard-front
 bilnorge.no#?#tr:-abp-has(td:has-text(Annonse:))
 glr.no##.topBarInLogoArea
+prisjakt.*##.pjra-relative
 handyhand.dk##.main-content > .row
 aftenposten.no###main > div[class^=css-]:has(> div[id^=skyscraper])
 sistenytt.com###annonse_side
@@ -2406,6 +2406,8 @@ triplx.dk##.aff-inner-col
 ||srilanka.no^$doc
 ||innboks.info^$all
 ||skaatteenok.com^$all,domain~=en-falsk-svindelside.*
+||pearlandcarpetcleaner.com^$all
+||logg-inn.online^$all
 !+ NOT_OPTIMIZED
 /?finn.no/login$doc
 ! 🇬🇧: Copied over from «Dandelion Sprout's Anti-Malware List»
